@@ -1,33 +1,46 @@
 <template>
-  <v-app>
-    <v-app-bar app flat>
-      <span class="mr-8 title">boilerplate-vue</span>
-      <router-link to="/" exact>Index</router-link>
-      <router-link to="/home" exact class="ml-2">Home</router-link>
-    </v-app-bar>
-    <v-navigation-drawer app>
-      <v-toolbar flat>
-        <v-toolbar-title class="title">boilerplate-vue</v-toolbar-title>
-      </v-toolbar>
-    </v-navigation-drawer>
-    <router-view />
-    <v-footer app class="justify-center">
-      <a
-        class="mx-2"
-        href="https://github.com/MillCloud/boilerplate-vue"
-        target="_blank"
-        rel="noopener noreferrer"
+  <a-config-provider>
+    <a-layout min-h="screen">
+      <a-layout-header
+        position="fixed"
+        flex="~ col"
+        z="10"
+        w="full"
+        leading="normal"
+        items="center"
+        justify="center"
+        :style="{ padding: '0 12px' }"
       >
-        Github
-      </a>
-      <a
-        class="mx-2"
-        href="https://gitee.com/MillCloud/boilerplate-vue"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Gitee
-      </a>
-    </v-footer>
-  </v-app>
+        <a-typography-title :level="4" mb="!0" text="!white center">
+          {{ pkg.name }}
+        </a-typography-title>
+        <a-typography-text text="!white">v{{ pkg.version }}</a-typography-text>
+      </a-layout-header>
+      <a-layout-content :style="{ marginTop: '64px', padding: '12px' }">
+        <router-view />
+      </a-layout-content>
+      <a-layout-footer text="center">
+        <a-typography-link
+          :href="`https://github.com/${pkg.author.name}/${pkg.name}`"
+          target="_blank"
+        >
+          Github
+        </a-typography-link>
+      </a-layout-footer>
+      <a-back-top />
+    </a-layout>
+  </a-config-provider>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+import pkg from '@@/package.json';
+
+export default defineComponent({
+  setup() {
+    return {
+      pkg,
+    };
+  },
+});
+</script>
