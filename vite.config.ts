@@ -39,6 +39,7 @@ export default defineConfig({
       '@vueuse/motion',
       '@vueuse/router',
       'ant-design-vue',
+      'swrv',
     ],
     exclude: ['vue-demi'],
   },
