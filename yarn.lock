@@ -797,7 +797,7 @@
   dependencies:
     "@octokit/openapi-types" "^9.2.0"
 
-"@rollup/pluginutils@^4.1.0":
+"@rollup/pluginutils@^4.1.0", "@rollup/pluginutils@^4.1.1":
   version "4.1.1"
   resolved "https://registry.nlark.com/@rollup/pluginutils/download/@rollup/pluginutils-4.1.1.tgz?cache=0&sync_timestamp=1626393703548&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40rollup%2Fpluginutils%2Fdownload%2F%40rollup%2Fpluginutils-4.1.1.tgz#1d4da86dd4eded15656a57d933fda2b9a08d47ec"
   integrity sha1-HU2obdTt7RVlalfZM/2iuaCNR+w=
@@ -2100,7 +2100,7 @@ chalk@^2.0.0, chalk@^2.4.1, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-change-case@~4.1.2:
+change-case@^4.1.2, change-case@~4.1.2:
   version "4.1.2"
   resolved "https://registry.nlark.com/change-case/download/change-case-4.1.2.tgz#fedfc5f136045e2398c0410ee441f95704641e12"
   integrity sha1-/t/F8TYEXiOYwEEO5EH5VwRkHhI=
@@ -2892,6 +2892,11 @@ es-get-iterator@^1.1.1:
     is-set "^2.0.2"
     is-string "^1.0.5"
     isarray "^2.0.5"
+
+es-module-lexer@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.nlark.com/es-module-lexer/download/es-module-lexer-0.7.1.tgz?cache=0&sync_timestamp=1625523919137&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fes-module-lexer%2Fdownload%2Fes-module-lexer-0.7.1.tgz#c2c8e0f46f2df06274cdaf0dd3f3b33e0a0b267d"
+  integrity sha1-wsjg9G8t8GJ0za8N0/OzPgoLJn0=
 
 es-to-primitive@^1.2.1:
   version "1.2.1"
@@ -7278,6 +7283,17 @@ vite-plugin-pages@~0.15.1:
     fast-glob "^3.2.7"
     json5 "^2.2.0"
     yaml "^2.0.0-7"
+
+vite-plugin-style-import@~1.1.0:
+  version "1.1.1"
+  resolved "https://registry.nlark.com/vite-plugin-style-import/download/vite-plugin-style-import-1.1.1.tgz#7ccebb042bce94eeb2f695c7339354a2dac48c25"
+  integrity sha1-fM67BCvOlO6y9pXHM5NUotrEjCU=
+  dependencies:
+    "@rollup/pluginutils" "^4.1.1"
+    change-case "^4.1.2"
+    debug "^4.3.2"
+    es-module-lexer "^0.7.1"
+    magic-string "^0.25.7"
 
 vite-plugin-vue-layouts@~0.3.1:
   version "0.3.1"

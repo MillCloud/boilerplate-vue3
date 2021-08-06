@@ -68,6 +68,7 @@
     "vite-plugin-components": "~0.13.2",
     "vite-plugin-icons": "~0.6.5",
     "vite-plugin-pages": "~0.15.1",
+    "vite-plugin-style-import": "~1.1.0",
     "vite-plugin-vue-layouts": "~0.3.1",
     "vite-plugin-windicss": "~1.2.7",
     "vite-tsconfig-paths": "~3.3.13",
