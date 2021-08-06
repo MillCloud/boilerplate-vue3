@@ -12,16 +12,16 @@
         :style="{ padding: '0 12px' }"
       >
         <a-typography-title :level="4" mb="!0" text="!white center">
-          {{ pkg.name }}
+          {{ name }}
         </a-typography-title>
-        <a-typography-text text="!white">v{{ pkg.version }}</a-typography-text>
+        <a-typography-text text="!white">v{{ version }}</a-typography-text>
       </a-layout-header>
       <a-layout-content :style="{ marginTop: '64px', padding: '12px' }">
         <router-view />
       </a-layout-content>
       <a-layout-footer text="center">
         <a-typography-link
-          :href="`https://github.com/${pkg.author.name}/${pkg.name}`"
+          :href="`https://github.com/${author.name || author}/${name}`"
           target="_blank"
         >
           Github
@@ -32,15 +32,8 @@
   </a-config-provider>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script lang="ts" setup>
 import pkg from '@@/package.json';
 
-export default defineComponent({
-  setup() {
-    return {
-      pkg,
-    };
-  },
-});
+const { name, version, author } = pkg;
 </script>
