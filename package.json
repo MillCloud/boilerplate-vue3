@@ -2,6 +2,7 @@
   "name": "boilerplate-vue",
   "version": "0.0.0",
   "private": true,
+  "author": "MillCloud",
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
     "commit": "cz",
