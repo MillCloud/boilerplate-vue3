@@ -1,7 +1,7 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import Vue from '@vitejs/plugin-vue';
-import ViteComponents, { AntDesignVueResolver } from 'vite-plugin-components';
+import Components, { AntDesignVueResolver } from 'vite-plugin-components';
 import StyleImport from 'vite-plugin-style-import';
 import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons';
 import TsconfigPaths from 'vite-tsconfig-paths';
@@ -10,6 +10,7 @@ import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import Legacy from '@vitejs/plugin-legacy';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
+import ESLint from 'vite-plugin-eslint';
 
 export default defineConfig({
   plugins: [
@@ -20,7 +21,8 @@ export default defineConfig({
     WindiCSS(),
     Pages(),
     Layouts(),
-    ViteComponents({
+    Components({
+      globalComponentsDeclaration: true,
       customComponentResolvers: [AntDesignVueResolver(), ViteIconsResolver()],
     }),
     StyleImport({
@@ -38,6 +40,9 @@ export default defineConfig({
       runtimeOnly: true,
       compositionOnly: true,
       include: [path.resolve('src', 'locales', '**')],
+    }),
+    ESLint({
+      fix: true,
     }),
   ],
   css: {
