@@ -733,10 +733,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@modyqyw/fabric@~3.0.0-4":
-  version "3.0.0-4"
-  resolved "https://registry.nlark.com/@modyqyw/fabric/download/@modyqyw/fabric-3.0.0-4.tgz#f2b92e7237c53d22f7780b26672d5a8ebb7b2344"
-  integrity sha1-8rkucjfFPSL3eAsmZy1ajrt7I0Q=
+"@modyqyw/fabric@~3.0.0-5":
+  version "3.0.0-5"
+  resolved "https://registry.nlark.com/@modyqyw/fabric/download/@modyqyw/fabric-3.0.0-5.tgz#54b65e5e5a505f29707b9d677e0e79916e7ddfd9"
+  integrity sha1-VLZeXlpQXylwe51nfg55kW5939k=
   dependencies:
     "@babel/core" "~7.15.0"
     "@babel/eslint-parser" "~7.15.0"
@@ -3513,7 +3513,7 @@ eslint-visitor-keys@^3.0.0:
   resolved "https://registry.nlark.com/eslint-visitor-keys/download/eslint-visitor-keys-3.0.0.tgz#e32e99c6cdc2eb063f204eda5db67bfe58bb4186"
   integrity sha1-4y6Zxs3C6wY/IE7aXbZ7/li7QYY=
 
-eslint@~7.32.0:
+eslint@^7.26.0, eslint@~7.32.0:
   version "7.32.0"
   resolved "https://registry.nlark.com/eslint/download/eslint-7.32.0.tgz?cache=0&sync_timestamp=1627685236231&other_urls=https%3A%2F%2Fregistry.nlark.com%2Feslint%2Fdownload%2Feslint-7.32.0.tgz#c6d328a14be3fb08c8d1d21e12c02fdb7a2a812d"
   integrity sha1-xtMooUvj+wjI0dIeEsAv23oqgS0=
@@ -6709,6 +6709,13 @@ rollup@^2.38.5:
   optionalDependencies:
     fsevents "~2.3.2"
 
+rollup@^2.47.0:
+  version "2.56.2"
+  resolved "https://registry.nlark.com/rollup/download/rollup-2.56.2.tgz#a045ff3f6af53ee009b5f5016ca3da0329e5470f"
+  integrity sha1-oEX/P2r1PuAJtfUBbKPaAynlRw8=
+  optionalDependencies:
+    fsevents "~2.3.2"
+
 run-async@^2.2.0, run-async@^2.4.0:
   version "2.4.1"
   resolved "https://registry.nlark.com/run-async/download/run-async-2.4.1.tgz#8440eccf99ea3e70bd409d49aab88e10c189a455"
@@ -7669,6 +7676,15 @@ vite-plugin-components@~0.13.2:
     fast-glob "^3.2.6"
     magic-string "^0.25.7"
     minimatch "^3.0.4"
+
+vite-plugin-eslint@~1.3.0:
+  version "1.3.0"
+  resolved "https://registry.nlark.com/vite-plugin-eslint/download/vite-plugin-eslint-1.3.0.tgz#cbc3f1542ca5e90d592ccfb6b4957e9b63f99a0e"
+  integrity sha1-y8PxVCyl6Q1ZLM+2tJV+m2P5mg4=
+  dependencies:
+    "@rollup/pluginutils" "^4.1.0"
+    eslint "^7.26.0"
+    rollup "^2.47.0"
 
 vite-plugin-icons@~0.6.5:
   version "0.6.5"
