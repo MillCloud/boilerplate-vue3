@@ -9,6 +9,9 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
     "lib": ["esnext", "dom"],
     "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
     "baseUrl": ".",
@@ -18,6 +21,7 @@
     }
   },
   "include": [
+    "./**/*.d.ts",
     "./**/*.ts",
     "./**/*.tsx",
     "./**/*.js",
