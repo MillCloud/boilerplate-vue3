@@ -21,13 +21,13 @@
     }
   },
   "include": [
-    "./**/*.d.ts",
-    "./**/*.ts",
-    "./**/*.tsx",
     "./**/*.js",
-    "./**/*.jsx",
-    "./**/*.vue",
     "./**/.*.js",
-    "./**/.*.ts"
-  ]
+    "./**/*.jsx",
+    "./**/*.ts",
+    "./**/.*.ts",
+    "./**/*.tsx",
+    "./**/*.vue"
+  ],
+  "exclude": ["node_modules", "dist", "dist_electron", "out", "unpackage"]
 }

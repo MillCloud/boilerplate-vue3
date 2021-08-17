@@ -23,11 +23,14 @@ import scrollSnapPlugin from 'windicss/plugin/scroll-snap';
 import typographyPlugin from 'windicss/plugin/typography';
 // @ts-ignore
 import animationsPlugin from '@windicss/animations';
-import iconsPlugin from '@windicss/plugin-icons';
 // @ts-ignore
 import scrollbarPlugin from '@windicss/plugin-scrollbar';
 // @ts-ignore
 import questionMarkPlugin from '@windicss/plugin-question-mark';
+// @ts-ignore
+import heropatternsPlugin from '@windicss/plugin-heropatterns';
+// @ts-ignore
+import interactionVariantsPlugin from '@windicss/plugin-interaction-variants';
 
 export default defineConfig({
   preflight: false,
@@ -40,9 +43,10 @@ export default defineConfig({
     scrollSnapPlugin,
     typographyPlugin,
     animationsPlugin,
-    iconsPlugin,
     scrollbarPlugin,
     questionMarkPlugin,
+    heropatternsPlugin,
+    interactionVariantsPlugin,
   ],
   theme: {
     extend: {
