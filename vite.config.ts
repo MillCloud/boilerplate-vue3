@@ -61,6 +61,7 @@ export default defineConfig({
       '@vueuse/motion',
       '@vueuse/router',
       'ant-design-vue',
+      'axios',
       'dayjs',
       'swrv',
       'vue',

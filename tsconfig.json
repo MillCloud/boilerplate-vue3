@@ -29,5 +29,12 @@
     "./**/*.tsx",
     "./**/*.vue"
   ],
-  "exclude": ["node_modules", "dist", "dist_electron", "out", "unpackage"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "dist-ssr",
+    "dist_electron",
+    "out",
+    "unpackage"
+  ]
 }
