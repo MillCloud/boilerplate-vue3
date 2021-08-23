@@ -22,7 +22,7 @@ import lineClampPlugin from 'windicss/plugin/line-clamp';
 import scrollSnapPlugin from 'windicss/plugin/scroll-snap';
 import typographyPlugin from 'windicss/plugin/typography';
 // @ts-ignore
-import animationsPlugin from '@windicss/animations';
+import animationsPlugin from '@windicss/plugin-animations';
 // @ts-ignore
 import scrollbarPlugin from '@windicss/plugin-scrollbar';
 // @ts-ignore
