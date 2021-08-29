@@ -21,7 +21,7 @@
       </a-layout-content>
       <a-layout-footer text="center">
         <a-typography-link
-          :href="`https://github.com/${author.name || author}/${name}`"
+          :href="`https://github.com/${author}/${name}`"
           target="_blank"
         >
           Github
