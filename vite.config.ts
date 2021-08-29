@@ -1,16 +1,20 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import Vue from '@vitejs/plugin-vue';
-import Components, { AntDesignVueResolver } from 'vite-plugin-components';
-import StyleImport from 'vite-plugin-style-import';
-import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons';
 import TsconfigPaths from 'vite-tsconfig-paths';
-import WindiCSS from 'vite-plugin-windicss';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
-import Legacy from '@vitejs/plugin-legacy';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
+import WindiCSS from 'vite-plugin-windicss';
+import Components, { AntDesignVueResolver } from 'vite-plugin-components';
+import StyleImport from 'vite-plugin-style-import';
+import Icons, { ViteIconsResolver } from 'vite-plugin-icons';
+import Compress from 'vite-plugin-compress';
+import Legacy from '@vitejs/plugin-legacy';
 import ESLint from 'vite-plugin-eslint';
+import Stylelint from 'vite-plugin-stylelint';
+import Inspect from 'vite-plugin-inspect';
+import Restart from 'vite-plugin-restart';
 
 export default defineConfig({
   plugins: [
@@ -18,9 +22,22 @@ export default defineConfig({
     TsconfigPaths({
       loose: true,
     }),
-    WindiCSS(),
-    Pages(),
+    Pages({
+      exclude: [
+        '**/components/*.js',
+        '**/components/*.jsx',
+        '**/components/*.ts',
+        '**/components/*.tsx',
+        '**/components/*.vue',
+      ],
+    }),
     Layouts(),
+    VueI18n({
+      runtimeOnly: true,
+      compositionOnly: true,
+      include: [path.resolve('src', 'locales', '**')],
+    }),
+    WindiCSS(),
     Components({
       globalComponentsDeclaration: true,
       customComponentResolvers: [AntDesignVueResolver(), ViteIconsResolver()],
@@ -34,15 +51,26 @@ export default defineConfig({
         },
       ],
     }),
-    ViteIcons(),
-    Legacy(),
-    VueI18n({
-      runtimeOnly: true,
-      compositionOnly: true,
-      include: [path.resolve('src', 'locales', '**')],
+    Icons({
+      defaultClass: 'anticon',
     }),
+    Compress(),
+    Legacy(),
     ESLint({
       fix: true,
+    }),
+    Stylelint({
+      fix: true,
+    }),
+    // localhost:3000/__inspect
+    Inspect(),
+    Restart({
+      restart: [
+        'vite.config.[jt]s',
+        'windi.config.[jt]s',
+        'tsconfig.json',
+        'pnpm-lock.yaml',
+      ],
     }),
   ],
   css: {
