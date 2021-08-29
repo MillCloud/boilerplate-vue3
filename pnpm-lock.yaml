@@ -11,7 +11,7 @@ specifiers:
   '@modyqyw/fabric': ~3.2.1
   '@modyqyw/utils': ~0.7.0
   '@types/jest': ~27.0.1
-  '@types/node': ~16.7.4
+  '@types/node': ~16.7.5
   '@types/nprogress': ~0.2.0
   '@types/statuses': ~2.0.0
   '@typescript-eslint/eslint-plugin': ~4.29.3
@@ -36,6 +36,7 @@ specifiers:
   axios-mock-adapter: ~1.20.0
   axios-retry: ~3.1.9
   commitizen: ~4.2.4
+  daisyui: ~1.14.0
   dayjs: ~1.10.6
   eslint: ~7.32.0
   husky: ~7.0.2
@@ -84,6 +85,7 @@ dependencies:
   axios-logger: registry.nlark.com/axios-logger/2.5.0
   axios-mock-adapter: registry.nlark.com/axios-mock-adapter/1.20.0_axios@0.21.1
   axios-retry: registry.nlark.com/axios-retry/3.1.9
+  daisyui: registry.nlark.com/daisyui/1.14.0
   dayjs: registry.nlark.com/dayjs/1.10.6
   mockjs: 1.1.0
   nprogress: 0.2.0
@@ -103,7 +105,7 @@ devDependencies:
   '@intlify/vite-plugin-vue-i18n': registry.nlark.com/@intlify/vite-plugin-vue-i18n/2.4.0_c492082eb9facedb3ae01550d308af38
   '@modyqyw/fabric': registry.nlark.com/@modyqyw/fabric/3.2.1_fa069f1911f71e3c38f65ce71ba226b3
   '@types/jest': registry.nlark.com/@types/jest/27.0.1
-  '@types/node': registry.nlark.com/@types/node/16.7.4
+  '@types/node': registry.nlark.com/@types/node/16.7.5
   '@types/nprogress': registry.nlark.com/@types/nprogress/0.2.0
   '@types/statuses': registry.nlark.com/@types/statuses/2.0.0
   '@typescript-eslint/eslint-plugin': registry.nlark.com/@typescript-eslint/eslint-plugin/4.29.3_fd14c0002fbbfb85b8a0070d0dffb93d
@@ -4705,6 +4707,12 @@ packages:
     version: 16.7.4
     dev: true
 
+  registry.nlark.com/@types/node/16.7.5:
+    resolution: {integrity: sha1-lhQrJDl3sD2Zwzj9sJJB0oYQJxE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/node/download/@types/node-16.7.5.tgz}
+    name: '@types/node'
+    version: 16.7.5
+    dev: true
+
   registry.nlark.com/@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha1-0zV0eaD9/dWQf+Z+F+CoXJBuEwE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/normalize-package-data/download/@types/normalize-package-data-2.4.1.tgz}
     name: '@types/normalize-package-data'
@@ -6201,6 +6209,12 @@ packages:
     resolution: {integrity: sha1-TPMOuH4dGgBdi2UQ+VKSQT9qHA4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/csstype/download/csstype-2.6.17.tgz?cache=0&sync_timestamp=1618818778879&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcsstype%2Fdownload%2Fcsstype-2.6.17.tgz}
     name: csstype
     version: 2.6.17
+
+  registry.nlark.com/daisyui/1.14.0:
+    resolution: {integrity: sha1-HWNljA3Yf5eV0zPnBoztuwsKUqY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/daisyui/download/daisyui-1.14.0.tgz}
+    name: daisyui
+    version: 1.14.0
+    dev: false
 
   registry.nlark.com/damerau-levenshtein/1.0.7:
     resolution: {integrity: sha1-ZDaAA1EqGmmSWTdBoJqdMag29V0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/damerau-levenshtein/download/damerau-levenshtein-1.0.7.tgz}
