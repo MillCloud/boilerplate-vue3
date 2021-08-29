@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite-plugin-windicss';
+import { defineConfig, transform } from 'windicss/helpers';
 import windiColors from 'windicss/colors';
 import {
   red as antdRed,
@@ -47,6 +47,7 @@ export default defineConfig({
     questionMarkPlugin,
     heropatternsPlugin,
     interactionVariantsPlugin,
+    transform('daisyui'),
   ],
   theme: {
     extend: {
