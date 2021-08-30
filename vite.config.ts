@@ -10,7 +10,6 @@ import Components, { AntDesignVueResolver } from 'vite-plugin-components';
 import StyleImport from 'vite-plugin-style-import';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
-import Compress from 'vite-plugin-compress';
 import Legacy from '@vitejs/plugin-legacy';
 import ESLint from 'vite-plugin-eslint';
 import Stylelint from 'vite-plugin-stylelint';
@@ -55,7 +54,6 @@ export default defineConfig({
     Icons({
       defaultClass: 'anticon',
     }),
-    Compress(),
     Legacy({
       // https://caniuse.com/proxy
       // https://caniuse.com/css-variables
