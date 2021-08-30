@@ -8,7 +8,8 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import WindiCSS from 'vite-plugin-windicss';
 import Components, { AntDesignVueResolver } from 'vite-plugin-components';
 import StyleImport from 'vite-plugin-style-import';
-import Icons, { ViteIconsResolver } from 'vite-plugin-icons';
+import Icons from 'unplugin-icons/vite';
+import IconsResolver from 'unplugin-icons/resolver';
 import Compress from 'vite-plugin-compress';
 import Legacy from '@vitejs/plugin-legacy';
 import ESLint from 'vite-plugin-eslint';
@@ -40,7 +41,7 @@ export default defineConfig({
     WindiCSS(),
     Components({
       globalComponentsDeclaration: true,
-      customComponentResolvers: [AntDesignVueResolver(), ViteIconsResolver()],
+      customComponentResolvers: [AntDesignVueResolver(), IconsResolver()],
     }),
     StyleImport({
       libs: [
@@ -55,7 +56,19 @@ export default defineConfig({
       defaultClass: 'anticon',
     }),
     Compress(),
-    Legacy(),
+    Legacy({
+      // https://caniuse.com/proxy
+      // https://caniuse.com/css-variables
+      // https://umijs.org/zh-CN/config#targets
+      targets: [
+        'edge >= 16',
+        'firefox >= 64',
+        'chrome >= 49',
+        'safari >= 10',
+        'android >= 5',
+        'ios >= 10',
+      ],
+    }),
     ESLint({
       fix: true,
     }),
@@ -65,12 +78,7 @@ export default defineConfig({
     // localhost:3000/__inspect
     Inspect(),
     Restart({
-      restart: [
-        'vite.config.[jt]s',
-        'windi.config.[jt]s',
-        'tsconfig.json',
-        'pnpm-lock.yaml',
-      ],
+      restart: ['windi.config.[jt]s', 'tsconfig.json', 'pnpm-lock.yaml'],
     }),
   ],
   css: {
