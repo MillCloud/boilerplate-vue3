@@ -12,6 +12,8 @@
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noEmit": true,
     "lib": ["esnext", "dom"],
     "types": [
       "vite/client",

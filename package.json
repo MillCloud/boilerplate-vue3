@@ -4,7 +4,7 @@
   "private": true,
   "author": "MillCloud",
   "scripts": {
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc && vite build",
     "commit": "cz",
     "dev": "vite",
     "lint": "pnpm run lint:json && pnpm run lint:markdown && pnpm run lint:script && pnpm run lint:style",
