@@ -6,11 +6,12 @@ import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import WindiCSS from 'vite-plugin-windicss';
-import Components, { AntDesignVueResolver } from 'vite-plugin-components';
-import StyleImport from 'vite-plugin-style-import';
+import Components from 'unplugin-vue-components/vite';
+import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Legacy from '@vitejs/plugin-legacy';
+import Env from 'vite-plugin-env-compatible';
 import ESLint from 'vite-plugin-eslint';
 import Stylelint from 'vite-plugin-stylelint';
 import Inspect from 'vite-plugin-inspect';
@@ -39,17 +40,8 @@ export default defineConfig({
     }),
     WindiCSS(),
     Components({
-      globalComponentsDeclaration: true,
-      customComponentResolvers: [AntDesignVueResolver(), IconsResolver()],
-    }),
-    StyleImport({
-      libs: [
-        {
-          libraryName: 'ant-design-vue',
-          esModule: true,
-          resolveStyle: (name) => `ant-design-vue/es/${name}/style/index`,
-        },
-      ],
+      dts: true,
+      resolvers: [AntDesignVueResolver(), IconsResolver()],
     }),
     Icons({
       defaultClass: 'anticon',
@@ -67,6 +59,7 @@ export default defineConfig({
         'ios >= 10',
       ],
     }),
+    Env(),
     ESLint({
       fix: true,
     }),
@@ -97,6 +90,7 @@ export default defineConfig({
       'ant-design-vue',
       'axios',
       'dayjs',
+      'moment',
       'swrv',
       'vue',
       'vue-query',
