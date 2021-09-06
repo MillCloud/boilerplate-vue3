@@ -6,6 +6,7 @@ import messages from '@intlify/vite-plugin-vue-i18n/messages';
 import { setupLayouts } from 'virtual:generated-layouts';
 import generatedRoutes from 'virtual:generated-pages';
 import App from './App.vue';
+import './styles/global.less';
 import 'virtual:windi.css';
 
 const router = createRouter({
