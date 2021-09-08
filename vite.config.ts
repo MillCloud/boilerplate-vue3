@@ -14,10 +14,37 @@ import Legacy from '@vitejs/plugin-legacy';
 import Env from 'vite-plugin-env-compatible';
 import ESLint from 'vite-plugin-eslint';
 import Stylelint from 'vite-plugin-stylelint';
+import Mkcert from 'vite-plugin-mkcert';
 import Inspect from 'vite-plugin-inspect';
 import Restart from 'vite-plugin-restart';
 
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    },
+  },
+  optimizeDeps: {
+    include: [
+      '@modyqyw/utils',
+      '@vueuse/core',
+      '@vueuse/gesture',
+      '@vueuse/integrations',
+      '@vueuse/motion',
+      '@vueuse/router',
+      'ant-design-vue',
+      'axios',
+      'dayjs',
+      'moment',
+      'swrv',
+      'vue',
+      'vue-query',
+      'vue-router',
+    ],
+    exclude: ['vue-demi'],
+  },
   plugins: [
     Vue(),
     TsconfigPaths({
@@ -66,36 +93,17 @@ export default defineConfig({
     Stylelint({
       fix: true,
     }),
+    Mkcert({
+      autoUpgrade: true,
+      source: 'coding',
+    }),
     // localhost:3000/__inspect
     Inspect(),
     Restart({
       restart: ['windi.config.[jt]s', 'tsconfig.json', 'pnpm-lock.yaml'],
     }),
   ],
-  css: {
-    preprocessorOptions: {
-      less: {
-        javascriptEnabled: true,
-      },
-    },
-  },
-  optimizeDeps: {
-    include: [
-      '@modyqyw/utils',
-      '@vueuse/core',
-      '@vueuse/gesture',
-      '@vueuse/integrations',
-      '@vueuse/motion',
-      '@vueuse/router',
-      'ant-design-vue',
-      'axios',
-      'dayjs',
-      'moment',
-      'swrv',
-      'vue',
-      'vue-query',
-      'vue-router',
-    ],
-    exclude: ['vue-demi'],
+  server: {
+    https: true,
   },
 });
