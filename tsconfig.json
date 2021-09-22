@@ -2,31 +2,35 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",
-    "sourceMap": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
+    "moduleResolution": "node",
     "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
     "noUnusedLocals": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": false,
     "noEmit": true,
-    "lib": ["esnext", "dom"],
+    "baseUrl": ".",
     "types": [
       "vite/client",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client",
+      "unplugin-icons/types/vue",
       "@intlify/vite-plugin-vue-i18n/client"
     ],
-    "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
-    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types", "./typings", "./src/typings"],
     "paths": {
-      "@/*": ["./src/*"],
-      "@@/*": ["./*"]
-    }
+      "@/*": ["./src/*"]
+    },
+    "lib": ["esnext", "dom"],
   },
   "include": [
     "./**/*.js",

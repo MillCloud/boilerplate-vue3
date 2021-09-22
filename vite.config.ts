@@ -71,6 +71,7 @@ export default defineConfig({
       resolvers: [AntDesignVueResolver(), IconsResolver()],
     }),
     Icons({
+      compiler: 'vue3',
       defaultClass: 'anticon',
     }),
     Legacy({

@@ -1,5 +1,5 @@
 const { stylelint } = require('@modyqyw/fabric');
 
 module.exports = {
-  ...stylelint.less,
+  ...stylelint.css,
 };
