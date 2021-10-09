@@ -5,13 +5,8 @@
     </a-col>
     <a-col :span="24">
       <p class="text-center">
-        For a guide and recipes on how to configure / customize this project,
-        check out the
-        <a
-          href="https://cn.vitejs.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        For a guide and recipes on how to configure / customize this project, check out the
+        <a href="https://cn.vitejs.dev/" target="_blank" rel="noopener noreferrer">
           vite documentation
         </a>
       </p>
@@ -137,28 +132,13 @@
       <h6 class="text-center prose-lg">Ecosystem</h6>
     </a-col>
     <a-col :span="24" class="text-center">
-      <a
-        class="mx-2"
-        href="https://cn.vuejs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a class="mx-2" href="https://cn.vuejs.org" target="_blank" rel="noopener noreferrer">
         vue
       </a>
-      <a
-        class="mx-2"
-        href="https://router.vuejs.org/zh/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a class="mx-2" href="https://router.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">
         vue-router
       </a>
-      <a
-        class="mx-2"
-        href="https://vueuse.js.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a class="mx-2" href="https://vueuse.js.org/" target="_blank" rel="noopener noreferrer">
         vue-use
       </a>
       <a
@@ -184,14 +164,6 @@
         rel="noopener noreferrer"
       >
         vue-i18n
-      </a>
-      <a
-        class="mx-2"
-        href="https://docs-swrv.netlify.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        swrv
       </a>
       <a
         class="mx-2"
