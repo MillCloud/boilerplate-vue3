@@ -1,58 +1,47 @@
 import path from 'path';
+// import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
-import Vue from '@vitejs/plugin-vue';
-import TsconfigPaths from 'vite-tsconfig-paths';
-import Pages from 'vite-plugin-pages';
-import Layouts from 'vite-plugin-vue-layouts';
-import VueI18n from '@intlify/vite-plugin-vue-i18n';
-import WindiCSS from 'vite-plugin-windicss';
-import Components from 'unplugin-vue-components/vite';
-import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
-import Icons from 'unplugin-icons/vite';
-import IconsResolver from 'unplugin-icons/resolver';
-import Legacy from '@vitejs/plugin-legacy';
-import Env from 'vite-plugin-env-compatible';
-import ESLint from 'vite-plugin-eslint';
-import Stylelint from 'vite-plugin-stylelint';
-import Mkcert from 'vite-plugin-mkcert';
-import Inspect from 'vite-plugin-inspect';
-import Restart from 'vite-plugin-restart';
+import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
+import pages from 'vite-plugin-pages';
+import layouts from 'vite-plugin-vue-layouts';
+import windicss from 'vite-plugin-windicss';
+import vueComponents from 'unplugin-vue-components/vite';
+import icons from 'unplugin-icons/vite';
+import iconsResolver from 'unplugin-icons/resolver';
+import env from 'vite-plugin-env-compatible';
+import eslint from 'vite-plugin-eslint';
+import stylelint from 'vite-plugin-stylelint';
+// import mkcert from 'vite-plugin-mkcert';
 
 export default defineConfig({
-  css: {
-    preprocessorOptions: {
-      less: {
-        javascriptEnabled: true,
-      },
-    },
-  },
   optimizeDeps: {
     include: [
+      '@element-plus/icons',
+      '@iconify/vue',
       '@modyqyw/utils',
       '@vueuse/core',
-      '@vueuse/gesture',
       '@vueuse/integrations',
-      '@vueuse/motion',
       '@vueuse/router',
-      'ant-design-vue',
       'axios',
       'dayjs',
       'element-plus',
-      '@element-plus/icons',
-      'moment',
-      'naive-ui',
+      'nprogress',
+      'pinia',
+      'query-string',
       'vue',
       'vue-query',
+      'vue-query/devtools',
       'vue-router',
     ],
     exclude: ['vue-demi'],
   },
   plugins: [
-    Vue(),
-    TsconfigPaths({
-      loose: true,
+    vue({
+      refTransform: true,
     }),
-    Pages({
+    vueJsx(),
+    pages({
       exclude: [
         '**/components/*.js',
         '**/components/*.jsx',
@@ -61,52 +50,45 @@ export default defineConfig({
         '**/components/*.vue',
       ],
     }),
-    Layouts(),
-    VueI18n({
-      runtimeOnly: true,
-      compositionOnly: true,
-      include: [path.resolve('src', 'locales', '**')],
+    layouts(),
+    windicss(),
+    vueComponents({
+      // dts: 'src/components.d.ts',
+      resolvers: [iconsResolver()],
     }),
-    WindiCSS(),
-    Components({
-      dts: true,
-      resolvers: [AntDesignVueResolver(), IconsResolver()],
-    }),
-    Icons({
+    icons({
       compiler: 'vue3',
       defaultClass: 'anticon',
     }),
-    Legacy({
-      // https://caniuse.com/proxy
-      // https://caniuse.com/css-variables
-      // https://umijs.org/zh-CN/config#targets
-      targets: [
-        'edge >= 16',
-        'firefox >= 64',
-        'chrome >= 49',
-        'safari >= 10',
-        'android >= 5',
-        'ios >= 10',
-      ],
+    env({
+      prefix: 'VITE',
     }),
-    Env(),
-    ESLint({
+    eslint({
       fix: true,
     }),
-    Stylelint({
+    stylelint({
       fix: true,
     }),
-    Mkcert({
-      autoUpgrade: true,
-      source: 'coding',
-    }),
-    // localhost:3000/__inspect
-    Inspect(),
-    Restart({
-      restart: ['windi.config.[jt]s', 'tsconfig.json', 'pnpm-lock.yaml'],
-    }),
+    // mkcert({
+    //   autoUpgrade: true,
+    //   source: 'coding',
+    // }),
   ],
+  resolve: {
+    alias: {
+      // '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@/': `${path.resolve('src')}/`,
+    },
+  },
   server: {
-    https: true,
+    fs: {
+      strict: true,
+    },
+    host: true,
+    // https: {
+    //   // https://github.com/vitejs/vite/issues/4403
+    //   // @ts-ignore
+    //   maxSessionMemory: 128,
+    // },
   },
 });

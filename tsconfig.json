@@ -24,13 +24,13 @@
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client",
       "unplugin-icons/types/vue",
-      "@intlify/vite-plugin-vue-i18n/client"
+      "element-plus/global"
     ],
     "typeRoots": ["./node_modules/@types", "./typings", "./src/typings"],
     "paths": {
       "@/*": ["./src/*"]
     },
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext", "dom"]
   },
   "include": [
     "./**/*.js",
@@ -41,12 +41,5 @@
     "./**/*.tsx",
     "./**/*.vue"
   ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "dist-ssr",
-    "dist_electron",
-    "out",
-    "unpackage"
-  ]
+  "exclude": ["node_modules", "dist"]
 }

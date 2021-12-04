@@ -1,55 +1,48 @@
 <template>
-  <a-config-provider :locale="antdvLocale">
-    <a-layout min-h="screen">
-      <a-layout-header
-        position="fixed"
-        flex="~ col"
-        z="10"
-        w="full"
-        leading="normal"
-        items="center"
-        justify="center"
-        :style="{ padding: '0 12px' }"
-      >
-        <a-typography-title :level="4" mb="!0" text="center !white">
-          {{ name }}
-        </a-typography-title>
-        <a-typography-text text="!white">v{{ version }}</a-typography-text>
-      </a-layout-header>
-      <a-layout-content :style="{ marginTop: '64px', padding: '12px' }">
-        <router-view />
-      </a-layout-content>
-      <a-layout-footer text="center">
-        <a-typography-link
-          :href="`https://github.com/${author}/${name}`"
-          target="_blank"
-        >
-          Github
-        </a-typography-link>
-      </a-layout-footer>
-      <a-back-top />
-    </a-layout>
-  </a-config-provider>
+  <el-container class="relative h-screen bg-gray-4">
+    <el-main>
+      <router-view />
+    </el-main>
+    <el-footer class="center">
+      <template v-if="network.isSupported">
+        <Icon
+          :class="{ 'text-danger': networkText.includes('请检查') }"
+          icon="carbon:network-public"
+          class="mr-2 el-icon-"
+        />
+        <span class="mr-4" :class="{ 'text-danger': networkText.includes('请检查') }">
+          {{ networkText }}
+        </span>
+      </template>
+      <Icon icon="carbon:version" class="mr-2 el-icon-" />
+      <span class="mr-4">v{{ pkg.version }}</span>
+    </el-footer>
+  </el-container>
 </template>
 
-<script lang="ts" setup>
-import pkg from '@@/package.json';
-import { computed } from 'vue';
-import { useI18n } from 'vue-i18n';
-import zhCN from 'ant-design-vue/es/locale/zh_CN';
-import enUS from 'ant-design-vue/es/locale/en_US';
-import 'moment/dist/locale/zh-cn';
+<script setup lang="ts">
+import { reactive, computed } from 'vue';
+import { useNetwork } from '@vueuse/core';
+import { Icon } from '@iconify/vue';
+import pkg from '@/../package.json';
 
-const { name, version, author } = pkg;
-
-const { locale } = useI18n({
-  locale: 'zh-Hans',
+const network = reactive(useNetwork());
+const networkText = computed(() => {
+  if (!network.isSupported) {
+    return '';
+  }
+  if (!network.isOnline) {
+    return '网络异常，请检查';
+  }
+  if (network.effectiveType !== '4g') {
+    return '网络慢，请检查';
+  }
+  return '网络正常';
 });
-
-const localeMap = {
-  'zh-Hans': zhCN,
-  'en-US': enUS,
-} as Record<string, any>;
-
-const antdvLocale = computed(() => localeMap[locale.value] || zhCN);
 </script>
+
+<style scoped lang="scss">
+.el-main {
+  padding: 80px;
+}
+</style>

@@ -1,35 +1,27 @@
 import { createApp } from 'vue';
-import { createRouter, createWebHistory } from 'vue-router';
-import { createI18n } from 'vue-i18n';
-// eslint-disable-next-line import/extensions
-import messages from '@intlify/vite-plugin-vue-i18n/messages';
-import { setupLayouts } from 'virtual:generated-layouts';
-import generatedRoutes from 'virtual:generated-pages';
+import { createPinia } from 'pinia';
+import dayjs from 'dayjs';
+import 'dayjs/locale/zh-cn';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+import ElementPlus, { ElCollapseTransition } from 'element-plus';
 import App from './App.vue';
-import './styles/global.less';
+import router from './router';
+import '@/styles/preflight.scss';
+import '@/styles/global.scss';
 import 'virtual:windi.css';
+import '@/guard';
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes: setupLayouts(generatedRoutes),
-  scrollBehavior: () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  },
-});
-
-const i18n = createI18n({
-  locale: 'zh-Hans',
-  fallback: 'zh-Hans',
-  messages,
-});
+dayjs.locale('zh-cn');
+dayjs.extend(customParseFormat);
 
 const app = createApp(App);
 
+app.use(createPinia());
+
 app.use(router);
 
-app.use(i18n);
+app.use(ElementPlus);
+
+app.component(ElCollapseTransition.name, ElCollapseTransition);
 
 app.mount('#app');

@@ -1,3 +1,4 @@
+/* eslint-disable no-template-curly-in-string */
 module.exports = {
   git: {
     commitMessage: 'chore(release): v${version}',
@@ -13,7 +14,7 @@ module.exports = {
     release: false,
   },
   hooks: {
-    "before:init": "pnpm run lint",
-    "after:git:release": "git push origin main:release -f"
-  }
+    'before:init': 'pnpm install && pnpm run lint',
+  },
 };
+/* eslint-enable no-template-curly-in-string */
