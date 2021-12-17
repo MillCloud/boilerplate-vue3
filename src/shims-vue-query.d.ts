@@ -14,7 +14,7 @@ import type {
 import type { UseMutationReturnType } from 'vue-query';
 import type { WithQueryClientKey } from 'vue-query/lib/vue/types';
 import type { UseQueryReturnType } from 'vue-query/lib/vue/useBaseQuery';
-import type { UnwrapRef, ComputedRef, Ref } from '@vue/composition-api';
+import type { UnwrapRef, ComputedRef, Ref } from 'vue';
 
 declare module 'vue-query' {
   export declare type UseQueryOptions<
