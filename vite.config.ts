@@ -38,7 +38,7 @@ export default defineConfig({
   },
   plugins: [
     vue({
-      refTransform: true,
+      reactivityTransform: true,
     }),
     vueJsx(),
     pages({
