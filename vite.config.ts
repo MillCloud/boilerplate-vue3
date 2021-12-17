@@ -34,7 +34,6 @@ export default defineConfig({
       'vue-query/devtools',
       'vue-router',
     ],
-    exclude: ['vue-demi'],
   },
   plugins: [
     vue({
