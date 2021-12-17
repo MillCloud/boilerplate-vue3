@@ -43,7 +43,7 @@
     "vue": "~3.2.13",
     "vue-query": "~1.14.0",
     "vue-router": "~4.0.12",
-    "windicss": "~3.3.0"
+    "windicss": "~3.4.0"
   },
   "devDependencies": {
     "@babel/core": "~7.16.5",
