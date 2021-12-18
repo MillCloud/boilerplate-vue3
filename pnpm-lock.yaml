@@ -19,7 +19,7 @@ specifiers:
   '@vitejs/plugin-vue-jsx': ~1.3.2
   '@vueuse/core': ~7.3.0
   '@vueuse/integrations': ~7.3.0
-  '@vueuse/router': ~7.3.0
+  '@vueuse/router': ~7.4.0
   '@windicss/plugin-animations': ~1.0.9
   '@windicss/plugin-heropatterns': ~0.0.8
   '@windicss/plugin-interaction-variants': ~1.0.0
@@ -73,7 +73,7 @@ dependencies:
   '@modyqyw/utils': 2.0.1
   '@vueuse/core': 7.3.0_vue@3.2.26
   '@vueuse/integrations': 7.3.0_vue@3.2.26
-  '@vueuse/router': 7.3.0_vue-router@4.0.12+vue@3.2.26
+  '@vueuse/router': 7.4.0_vue-router@4.0.12+vue@3.2.26
   axios: 0.24.0
   dayjs: 1.10.7
   element-plus: 1.2.0-beta.6_vue@3.2.26
@@ -1621,12 +1621,12 @@ packages:
       - vue
     dev: false
 
-  /@vueuse/router/7.3.0_vue-router@4.0.12+vue@3.2.26:
-    resolution: {integrity: sha512-MRGaZPVV21MZOZ759LMRWTlSaRvcKh+kGw2tGCLhxkihObcrNNLl0h3N5QtBy/+eR84tf7MO7JHCL+0PJspzQg==}
+  /@vueuse/router/7.4.0_vue-router@4.0.12+vue@3.2.26:
+    resolution: {integrity: sha512-UZ+rRxT5wmmqC9CGLG/gaPO2C4vDKom11AWnvIElnDZSCsvesGnxfqH7nGUqrDFkYbwMBy8kvrVqccJ8uakgQA==}
     peerDependencies:
       vue-router: '>=4.0.0-rc.1'
     dependencies:
-      '@vueuse/shared': 7.3.0_vue@3.2.26
+      '@vueuse/shared': 7.4.0_vue@3.2.26
       vue-demi: 0.12.1_vue@3.2.26
       vue-router: 4.0.12_vue@3.2.26
     transitivePeerDependencies:
@@ -1636,6 +1636,21 @@ packages:
 
   /@vueuse/shared/7.3.0_vue@3.2.26:
     resolution: {integrity: sha512-vOAeI84tIXKVkzm8s/Mxbrzhj0QN6NyVc/sC6LrW0AjVNdvpD8sB1dZiDn9yh8T77WJmloCEt4zZVIppeq7I+w==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      vue: 3.2.26
+      vue-demi: 0.12.1_vue@3.2.26
+    dev: false
+
+  /@vueuse/shared/7.4.0_vue@3.2.26:
+    resolution: {integrity: sha512-x5Jn6jUB8gS1mGnVCoNWFEpAoDkm2QwtacZTUgKMn0Ow8tlUBKIfGVOt4vn9qZB10froED/ARHEj79WKLXRieA==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
