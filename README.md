@@ -23,7 +23,7 @@
 - [axios](https://github.com/axios/axios)
 - [vue-query](https://vue-query.vercel.app/)
 - [statuses](https://github.com/jshttp/statuses)
-- [windicss](https://windicss.org/)
+- [tailwindcss](https://tailwindcss.org/)
 - [element-plus](https://element-plus.org/) - 对于移动端网页，请考虑 [vant](https://youzan.github.io/vant)
 - [iconify](https://iconify.design/)
 - [@modyqyw/utils](https://github.com/modyqyw/utils)
