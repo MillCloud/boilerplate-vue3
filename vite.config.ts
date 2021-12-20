@@ -5,7 +5,6 @@ import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import pages from 'vite-plugin-pages';
 import layouts from 'vite-plugin-vue-layouts';
-import windicss from 'vite-plugin-windicss';
 import vueComponents from 'unplugin-vue-components/vite';
 import icons from 'unplugin-icons/vite';
 import iconsResolver from 'unplugin-icons/resolver';
@@ -17,7 +16,7 @@ import stylelint from 'vite-plugin-stylelint';
 export default defineConfig({
   optimizeDeps: {
     include: [
-      '@element-plus/icons',
+      '@element-plus/icons-vue',
       '@iconify/vue',
       '@modyqyw/utils',
       '@vueuse/core',
@@ -50,7 +49,6 @@ export default defineConfig({
       ],
     }),
     layouts(),
-    windicss(),
     vueComponents({
       // dts: 'src/components.d.ts',
       resolvers: [iconsResolver()],
