@@ -20,11 +20,12 @@
     "noEmit": true,
     "baseUrl": ".",
     "types": [
+      "element-plus/global",
+      "unplugin-icons/types/vue",
       "vite/client",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client",
-      "unplugin-icons/types/vue",
-      "element-plus/global"
+      "vue/macros-global"
     ],
     "typeRoots": ["./node_modules/@types", "./typings", "./src/typings"],
     "paths": {
