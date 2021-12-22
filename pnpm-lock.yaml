@@ -59,7 +59,7 @@ specifiers:
   vite-plugin-stylelint: ~1.1.0
   vite-plugin-vue-layouts: ~0.5.0
   vue: ~3.2.13
-  vue-query: ~1.14.0
+  vue-query: ~1.15.0
   vue-router: ~4.0.12
   vue-tsc: ~0.30.0
 
@@ -80,7 +80,7 @@ dependencies:
   query-string: 7.0.1
   statuses: 2.0.1
   vue: 3.2.26
-  vue-query: 1.14.0_vue@3.2.26
+  vue-query: 1.15.0_vue@3.2.26
   vue-router: 4.0.12_vue@3.2.26
 
 devDependencies:
@@ -8727,8 +8727,8 @@ packages:
       vue-class-component: 7.2.6_vue@3.2.26
     dev: true
 
-  /vue-query/1.14.0_vue@3.2.26:
-    resolution: {integrity: sha512-7H4lIfObE/rFqQa+D/2fremQkq7pTE7RK5LxSHqyPCeeHxU2skvx/+81m2h0FBN1kcP+qM/48ZXbsxXZFHzKhw==}
+  /vue-query/1.15.0_vue@3.2.26:
+    resolution: {integrity: sha512-bQuG7fKj0YP6O5yjjKz4/Sh0NhdnP83Da0htUYW/j2HSXb1oRsKGCt5bqTiPlHLSJq3YhdROCh2RRwLF7rp9nA==}
     peerDependencies:
       '@nuxtjs/composition-api': ^0.24.4
       '@vue/composition-api': ^1.0.0

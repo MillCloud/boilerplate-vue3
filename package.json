@@ -41,7 +41,7 @@
     "query-string": "~7.0.1",
     "statuses": "~2.0.1",
     "vue": "~3.2.13",
-    "vue-query": "~1.14.0",
+    "vue-query": "~1.15.0",
     "vue-router": "~4.0.12"
   },
   "devDependencies": {
