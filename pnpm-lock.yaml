@@ -14,6 +14,7 @@ specifiers:
   '@tailwindcss/forms': ~0.4.0
   '@tailwindcss/line-clamp': ~0.3.0
   '@tailwindcss/typography': ~0.5.0
+  '@types/browser-update': ~3.3.0
   '@types/nprogress': ~0.2.0
   '@types/statuses': ~2.0.0
   '@typescript-eslint/eslint-plugin': ~5.8.1
@@ -24,6 +25,7 @@ specifiers:
   '@vueuse/integrations': ~7.5.1
   '@vueuse/router': ~7.5.1
   axios: ~0.24.0
+  browser-update: ~3.3.37
   commitizen: ~4.2.4
   cross-env: ~7.0.3
   dayjs: ~1.10.7
@@ -73,6 +75,7 @@ dependencies:
   '@vueuse/integrations': 7.5.1_vue@3.2.26
   '@vueuse/router': 7.5.1_vue-router@4.0.12+vue@3.2.26
   axios: 0.24.0
+  browser-update: 3.3.37
   dayjs: 1.10.7
   element-plus: 1.3.0-beta.1_vue@3.2.26
   modern-normalize: 1.1.0
@@ -94,6 +97,7 @@ devDependencies:
   '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.8
   '@tailwindcss/line-clamp': 0.3.0_tailwindcss@3.0.8
   '@tailwindcss/typography': 0.5.0_tailwindcss@3.0.8
+  '@types/browser-update': 3.3.0
   '@types/nprogress': 0.2.0
   '@types/statuses': 2.0.0
   '@typescript-eslint/eslint-plugin': 5.8.1_3a47348159e115370aa4cba56aba33b6
@@ -1266,6 +1270,10 @@ packages:
     resolution: {integrity: sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==}
     dev: true
 
+  /@types/browser-update/3.3.0:
+    resolution: {integrity: sha512-VtiqmaXXQ7b0tXYbeIAyQskI53r2xHRm/UBLJEJR6m6bjwqECmGRVyibn2dtfC33ytmAnDw8kPpHa8DUbZPnIg==}
+    dev: true
+
   /@types/cacheable-request/6.0.2:
     resolution: {integrity: sha512-B3xVo+dlKM6nnKTcmm5ZtY/OL8bOAOd2Olee9M1zft65ox50OzjEHW91sDiU9j6cvW8Ejg1/Qkf4xd2kugApUA==}
     dependencies:
@@ -2145,6 +2153,10 @@ packages:
       oblivious-set: 1.0.0
       rimraf: 3.0.2
       unload: 2.2.0
+    dev: false
+
+  /browser-update/3.3.37:
+    resolution: {integrity: sha512-6PIEXMYAajv6u2H89Z39gQJ0gjwZ0SZkqvsJnvt+9nHtBPdRUpp4X3HWMJX3zN2bKlX4FgAkXzkPdiOOv7sP5Q==}
     dev: false
 
   /browserslist/4.19.1:
