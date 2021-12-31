@@ -3,6 +3,7 @@ import { createPinia } from 'pinia';
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
+import browserUpdate from 'browser-update';
 import ElementPlus, { ElCollapseTransition } from 'element-plus';
 import App from './App.vue';
 import router from './router';
@@ -13,14 +14,15 @@ import '@/guard';
 dayjs.locale('zh-cn');
 dayjs.extend(customParseFormat);
 
-const app = createApp(App);
+browserUpdate({
+  required: { e: 79, f: 67, o: 50, s: 12, c: 63 },
+  insecure: true,
+  unsupported: true,
+});
 
-app.use(createPinia());
-
-app.use(router);
-
-app.use(ElementPlus);
-
-app.component(ElCollapseTransition.name, ElCollapseTransition);
-
-app.mount('#app');
+createApp(App)
+  .use(createPinia())
+  .use(router)
+  .use(ElementPlus)
+  .component(ElCollapseTransition.name, ElCollapseTransition)
+  .mount('#app');
