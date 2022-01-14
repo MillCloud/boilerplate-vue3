@@ -6,7 +6,7 @@ specifiers:
   '@babel/eslint-parser': ~7.16.5
   '@commitlint/cli': ~16.0.2
   '@element-plus/icons-vue': ~0.2.4
-  '@iconify/json': ~1.1.455
+  '@iconify/json': ~1.1.456
   '@iconify/vue': ~3.1.2
   '@modyqyw/fabric': ~4.7.3
   '@modyqyw/utils': ~2.1.2
@@ -64,7 +64,7 @@ specifiers:
   vite-plugin-stylelint: ~1.1.0
   vite-plugin-vue-layouts: ~0.5.0
   vue: ~3.2.13
-  vue-query: ~1.16.2
+  vue-query: ~1.17.0
   vue-router: ~4.0.12
   vue-tsc: ~0.30.2
 
@@ -87,14 +87,14 @@ dependencies:
   query-string: 7.1.0
   statuses: 2.0.1
   vue: 3.2.26
-  vue-query: 1.16.2_vue@3.2.26
+  vue-query: 1.17.0_vue@3.2.26
   vue-router: 4.0.12_vue@3.2.26
 
 devDependencies:
   '@babel/core': 7.16.7
   '@babel/eslint-parser': 7.16.5_@babel+core@7.16.7+eslint@8.6.0
   '@commitlint/cli': 16.0.2
-  '@iconify/json': 1.1.455
+  '@iconify/json': 1.1.456
   '@modyqyw/fabric': 4.7.3_e55de2769171f5e3bdd52277407ed5e6
   '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@3.0.13
   '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.13
@@ -810,8 +810,8 @@ packages:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
     dev: true
 
-  /@iconify/json/1.1.455:
-    resolution: {integrity: sha512-F57EnMYBm+59XKvmuI3fCXrsgss8JCAHZcseUW4Hui7RpSTYN4YMuJPbrwdu3SiFgFp2l1aaB+iQO0Gh1VUGIQ==}
+  /@iconify/json/1.1.456:
+    resolution: {integrity: sha512-JlsGLE0DG0fcbINV+VshwSx+Z2Xeji4iEnVQaYMuvwGL27nBn8iDsUg58Kva63stu5fHkOg5acC7NJoLYJ+cUg==}
     dev: true
 
   /@iconify/types/1.0.12:
@@ -8926,8 +8926,8 @@ packages:
       vue-class-component: 7.2.6_vue@3.2.26
     dev: true
 
-  /vue-query/1.16.2_vue@3.2.26:
-    resolution: {integrity: sha512-lfWfadFgvHE6yOsSPX10bFdTvlpdYH2YgITRVq/SpJ7s7M9h4N+KRyuIy428cIIugzajqQkK70VgDiICl8/rbQ==}
+  /vue-query/1.17.0_vue@3.2.26:
+    resolution: {integrity: sha512-Pnq5qwDE/kYVNX9MTiPvUjecTmocohMJ6d01H5VIfsGOmFVxh3F2xUejqGU6dt4AUi3lqB/rSc1/1N3Fah3BOw==}
     peerDependencies:
       '@nuxtjs/composition-api': ^0.24.4
       '@vue/composition-api': ^1.0.0

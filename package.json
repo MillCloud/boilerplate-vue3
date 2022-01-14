@@ -41,14 +41,14 @@
     "query-string": "~7.1.0",
     "statuses": "~2.0.1",
     "vue": "~3.2.13",
-    "vue-query": "~1.16.2",
+    "vue-query": "~1.17.0",
     "vue-router": "~4.0.12"
   },
   "devDependencies": {
     "@babel/core": "~7.16.7",
     "@babel/eslint-parser": "~7.16.5",
     "@commitlint/cli": "~16.0.2",
-    "@iconify/json": "~1.1.455",
+    "@iconify/json": "~1.1.456",
     "@modyqyw/fabric": "~4.7.3",
     "@tailwindcss/aspect-ratio": "~0.4.0",
     "@tailwindcss/forms": "~0.4.0",
