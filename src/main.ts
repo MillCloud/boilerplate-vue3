@@ -5,6 +5,7 @@ import 'dayjs/locale/zh-cn';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 import browserUpdate from 'browser-update';
 import ElementPlus, { ElCollapseTransition } from 'element-plus';
+import ElementProComponents from 'element-pro-components';
 import App from './App.vue';
 import router from './router';
 import '@/styles/preflight.scss';
@@ -24,5 +25,6 @@ createApp(App)
   .use(createPinia())
   .use(router)
   .use(ElementPlus)
+  .use(ElementProComponents)
   .component(ElCollapseTransition.name, ElCollapseTransition)
   .mount('#app');

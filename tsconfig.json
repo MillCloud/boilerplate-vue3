@@ -8,6 +8,7 @@
     },
     "types": [
       "element-plus/global",
+      "element-pro-components/types/components.d.ts",
       "type-fest",
       "unplugin-icons/types/vue",
       "vite/client",

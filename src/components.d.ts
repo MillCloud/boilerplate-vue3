@@ -68,6 +68,7 @@ declare module 'vue' {
     ElPagination: typeof import('element-plus/es')['ElPagination'];
     ElPopconfirm: typeof import('element-plus/es')['ElPopconfirm'];
     ElPopover: typeof import('element-plus/es')['ElPopover'];
+    ElPopper: typeof import('element-plus/es')['ElPopper'];
     ElProgress: typeof import('element-plus/es')['ElProgress'];
     ElRadio: typeof import('element-plus/es')['ElRadio'];
     ElRadioButton: typeof import('element-plus/es')['ElRadioButton'];
@@ -102,6 +103,24 @@ declare module 'vue' {
     ElTreeV2: typeof import('element-plus/es')['ElTreeV2'];
     ElUpload: typeof import('element-plus/es')['ElUpload'];
     ElVirtualList: typeof import('element-plus/es')['ElVirtualList'];
+    ProAutocompleteTag: typeof import('element-pro-components/types/components')['ProAutocompleteTag'];
+    ProBreadcrumb: typeof import('element-pro-components/types/components')['ProBreadcrumb'];
+    ProCheckbox: typeof import('element-pro-components/types/components')['ProCheckbox'];
+    ProCheckboxButton: typeof import('element-pro-components/types/components')['ProCheckboxButton'];
+    ProColumnSetting: typeof import('element-pro-components/types/components')['ProColumnSetting'];
+    ProCrud: typeof import('element-pro-components/types/components')['ProCrud'];
+    ProDescriptions: typeof import('element-pro-components/types/components')['ProDescriptions'];
+    ProForm: typeof import('element-pro-components/types/components')['ProForm'];
+    ProInputTag: typeof import('element-pro-components/types/components')['ProInputTag'];
+    ProLayout: typeof import('element-pro-components/types/components')['ProLayout'];
+    ProLink: typeof import('element-pro-components/types/components')['ProLink'];
+    ProMenu: typeof import('element-pro-components/types/components')['ProMenu'];
+    ProRadio: typeof import('element-pro-components/types/components')['ProRadio'];
+    ProRadioButton: typeof import('element-pro-components/types/components')['ProRadioButton'];
+    ProSelect: typeof import('element-pro-components/types/components')['ProSelect'];
+    ProTable: typeof import('element-pro-components/types/components')['ProTable'];
+    ProTabs: typeof import('element-pro-components/types/components')['ProTabs'];
+    ProTreeSelect: typeof import('element-pro-components/types/components')['ProTreeSelect'];
     RouterLink: typeof import('vue-router')['RouterLink'];
     RouterView: typeof import('vue-router')['RouterView'];
   }

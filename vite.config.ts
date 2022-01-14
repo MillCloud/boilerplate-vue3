@@ -25,6 +25,7 @@ export default defineConfig({
       'axios',
       'dayjs',
       'element-plus',
+      'element-pro-components',
       'nprogress',
       'pinia',
       'query-string',

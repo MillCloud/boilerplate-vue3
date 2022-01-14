@@ -25,6 +25,7 @@
 - [statuses](https://github.com/jshttp/statuses)
 - [tailwindcss](https://tailwindcss.org/)
 - [element-plus](https://element-plus.org/) - 对于移动端网页，请考虑 [vant](https://youzan.github.io/vant)
+- [element-pro-components](https://tolking.github.io/element-pro-components/)
 - [iconify](https://iconify.design/)
 - [@modyqyw/utils](https://github.com/modyqyw/utils)
 - [dayjs](https://dayjs.gitee.io/zh-CN/)
