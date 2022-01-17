@@ -40,7 +40,7 @@
     "pinia": "~2.0.9",
     "query-string": "~7.1.0",
     "statuses": "~2.0.1",
-    "vue": "~3.2.13",
+    "vue": "~3.2.27",
     "vue-query": "~1.17.0",
     "vue-router": "~4.0.12"
   },

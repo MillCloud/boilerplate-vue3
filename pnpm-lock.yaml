@@ -63,7 +63,7 @@ specifiers:
   vite-plugin-pages: ~0.20.0
   vite-plugin-stylelint: ~1.1.0
   vite-plugin-vue-layouts: ~0.5.0
-  vue: ~3.2.13
+  vue: ~3.2.27
   vue-query: ~1.17.0
   vue-router: ~4.0.12
   vue-tsc: 0.30.2
