@@ -7,8 +7,9 @@ const scrollSnapPlugin = require('windicss/plugin/scroll-snap');
 const typographyPlugin = require('windicss/plugin/typography');
 
 module.exports = defineConfig({
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   extract: {
-    include: ['src/**/*.{vue,html,jsx,tsx}'],
+    include: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     exclude: ['node_modules', '.git'],
   },
   theme: {
