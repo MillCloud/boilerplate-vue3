@@ -1,12 +1,12 @@
-import { defineConfig } from 'windicss/helpers';
-import aspectRatioPlugin from 'windicss/plugin/aspect-ratio';
-import formsPlugin from 'windicss/plugin/forms';
-import filtersPlugin from 'windicss/plugin/filters';
-import lineClampPlugin from 'windicss/plugin/line-clamp';
-import scrollSnapPlugin from 'windicss/plugin/scroll-snap';
-import typographyPlugin from 'windicss/plugin/typography';
+const { defineConfig } = require('windicss/helpers');
+const aspectRatioPlugin = require('windicss/plugin/aspect-ratio');
+const formsPlugin = require('windicss/plugin/forms');
+const filtersPlugin = require('windicss/plugin/filters');
+const lineClampPlugin = require('windicss/plugin/line-clamp');
+const scrollSnapPlugin = require('windicss/plugin/scroll-snap');
+const typographyPlugin = require('windicss/plugin/typography');
 
-export default defineConfig({
+module.exports = defineConfig({
   extract: {
     include: ['src/**/*.{vue,html,jsx,tsx}'],
     exclude: ['node_modules', '.git'],
