@@ -8,6 +8,7 @@ import layouts from 'vite-plugin-vue-layouts';
 import vueComponents from 'unplugin-vue-components/vite';
 import icons from 'unplugin-icons/vite';
 import iconsResolver from 'unplugin-icons/resolver';
+import windicss from 'vite-plugin-windicss';
 import env from 'vite-plugin-env-compatible';
 import eslint from 'vite-plugin-eslint';
 import stylelint from 'vite-plugin-stylelint';
@@ -57,6 +58,9 @@ export default defineConfig({
     icons({
       compiler: 'vue3',
       defaultClass: 'anticon',
+    }),
+    windicss({
+      transformCSS: 'pre',
     }),
     env({
       prefix: 'VITE',

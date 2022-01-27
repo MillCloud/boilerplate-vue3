@@ -6,7 +6,6 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "preserveSymlinks": true,
     "types": [
       "element-plus/global",
       "element-pro-components/types/components.d.ts",

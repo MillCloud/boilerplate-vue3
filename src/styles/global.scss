@@ -3,10 +3,6 @@
 @import "element-plus/theme-chalk/display.css";
 @import "element-pro-components/lib/styles/index.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --vt-c-white: #fff;

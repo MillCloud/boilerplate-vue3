@@ -10,6 +10,7 @@ import App from './App.vue';
 import router from './router';
 import '@/styles/preflight.scss';
 import '@/styles/global.scss';
+import 'virtual:windi.css';
 import '@/guard';
 
 dayjs.locale('zh-cn');
