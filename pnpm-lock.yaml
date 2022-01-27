@@ -47,7 +47,7 @@ specifiers:
   shelljs: ~0.8.5
   statuses: ~2.0.1
   stylelint: ~14.3.0
-  type-fest: ~2.10.0
+  type-fest: ~2.11.0
   typescript: ~4.5.5
   unplugin-icons: ~0.13.0
   unplugin-vue-components: ~0.17.14
@@ -117,7 +117,7 @@ devDependencies:
   sass: 1.49.0
   shelljs: 0.8.5
   stylelint: 14.3.0
-  type-fest: 2.10.0
+  type-fest: 2.11.0
   typescript: 4.5.5
   unplugin-icons: 0.13.0_vite@2.7.13
   unplugin-vue-components: 0.17.14_vite@2.7.13+vue@3.2.29
@@ -8215,7 +8215,7 @@ packages:
     resolution: {integrity: sha512-DdFZBrj+8w/1KB6sa12uucro676gipZ5ImcJIlO68VQANBi++TGOjdp6/UOuRMlbkeSpncCY1QS4bGtlYfBZFg==}
     engines: {node: '>=12.20'}
     dependencies:
-      type-fest: 2.10.0
+      type-fest: 2.11.0
     dev: false
 
   /ts-node/10.4.0_a4f631dedb43a025ec8d07f05ba12686:
@@ -8340,8 +8340,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /type-fest/2.10.0:
-    resolution: {integrity: sha512-u2yreDMllFI3VCpWt0rKrGs/E2LO0YHBwiiOIj+ilQh9+ALMaa4lNBSdoDvuHN3cbKcYk9L1BXP49x9RT+o/SA==}
+  /type-fest/2.11.0:
+    resolution: {integrity: sha512-GwRKR1jZMAQP/hVR929DWB5Z2lwSIM/nNcHEfDj2E0vOMhcYbqFxGKE5JaSzMdzmEtWJiamEn6VwHs/YVXVhEQ==}
     engines: {node: '>=12.20'}
 
   /typedarray-to-buffer/3.1.5:
