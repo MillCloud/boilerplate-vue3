@@ -11,6 +11,7 @@ import iconsResolver from 'unplugin-icons/resolver';
 import env from 'vite-plugin-env-compatible';
 import eslint from 'vite-plugin-eslint';
 import stylelint from 'vite-plugin-stylelint';
+import compression from 'vite-plugin-compression';
 // import mkcert from 'vite-plugin-mkcert';
 
 export default defineConfig({
@@ -67,6 +68,7 @@ export default defineConfig({
     stylelint({
       fix: true,
     }),
+    compression(),
     // mkcert({
     //   autoUpgrade: true,
     //   source: 'coding',
