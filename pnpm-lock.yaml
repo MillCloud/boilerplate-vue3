@@ -6,7 +6,7 @@ specifiers:
   '@babel/eslint-parser': ~7.16.5
   '@commitlint/cli': ~16.1.0
   '@element-plus/icons-vue': ~0.2.6
-  '@iconify/json': ~2.0.29
+  '@iconify/json': ~2.0.30
   '@iconify/vue': ~3.1.3
   '@modyqyw/fabric': ~4.10.1
   '@modyqyw/utils': ~2.1.2
@@ -60,6 +60,7 @@ specifiers:
   unplugin-icons: ~0.13.0
   unplugin-vue-components: ~0.17.15
   vite: ~2.7.13
+  vite-plugin-compression: ~0.5.0
   vite-plugin-env-compatible: ~1.1.1
   vite-plugin-eslint: ~1.3.0
   vite-plugin-mkcert: ~1.5.2
@@ -98,7 +99,7 @@ devDependencies:
   '@babel/core': 7.16.12
   '@babel/eslint-parser': 7.16.5_@babel+core@7.16.12+eslint@8.7.0
   '@commitlint/cli': 16.1.0
-  '@iconify/json': 2.0.29
+  '@iconify/json': 2.0.30
   '@modyqyw/fabric': 4.10.1_ffba209282ba2f451ced8a210390e04e
   '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@3.0.17
   '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.17
@@ -136,6 +137,7 @@ devDependencies:
   unplugin-icons: 0.13.0_vite@2.7.13
   unplugin-vue-components: 0.17.15_vite@2.7.13+vue@3.2.29
   vite: 2.7.13_sass@1.49.0
+  vite-plugin-compression: 0.5.0_vite@2.7.13
   vite-plugin-env-compatible: 1.1.1
   vite-plugin-eslint: 1.3.0_vite@2.7.13
   vite-plugin-mkcert: 1.5.2
@@ -816,8 +818,8 @@ packages:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
     dev: true
 
-  /@iconify/json/2.0.29:
-    resolution: {integrity: sha512-9sxNQhWmPxzi+hu/IYxisdvORfMcEUCp9UTymAbOh1asQ19mOCkRZ+6FoBRuubJSzHUQwZZb4zhiZYJEoX6z1g==}
+  /@iconify/json/2.0.30:
+    resolution: {integrity: sha512-dOnM2fH813s9piLtafBGz5Oj0Z9bawexGC2McXilm/s9jyoHAt7UmX2Wp2P/b01XgCA0NCRVW8/irCwZgY8mcA==}
     dependencies:
       '@iconify/types': 1.0.12
       pathe: 0.0.2
@@ -8852,6 +8854,19 @@ packages:
     resolution: {integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==}
     engines: {node: '>= 0.10'}
     dev: false
+
+  /vite-plugin-compression/0.5.0_vite@2.7.13:
+    resolution: {integrity: sha512-5Rwid9Q2B59aiQGauh7cw9uJI5OVTAuWkGwAsLza/uPxaGIHtMHe8q5OpXddalQFsQqS2GZ+fvQjJBS5kTJO5w==}
+    peerDependencies:
+      vite: '>=2.0.0'
+    dependencies:
+      chalk: 4.1.2
+      debug: 4.3.3
+      fs-extra: 10.0.0
+      vite: 2.7.13_sass@1.49.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /vite-plugin-env-compatible/1.1.1:
     resolution: {integrity: sha512-4lqhBWhOzP+SaCPoCVdmpM5cXzjKQV5jgFauxea488oOeElXo/kw6bXkMIooZhrh9q7gclTl8en6N9NmnqUwRQ==}
