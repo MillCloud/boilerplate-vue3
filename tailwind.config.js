@@ -7,11 +7,14 @@ const scrollSnapPlugin = require('windicss/plugin/scroll-snap');
 const typographyPlugin = require('windicss/plugin/typography');
 
 module.exports = defineConfig({
+  // tailwindcss
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  // windicss
   extract: {
     include: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     exclude: ['node_modules', '.git'],
   },
+  // tailwindcss & windicss
   theme: {
     extend: {
       screens: {
@@ -24,6 +27,7 @@ module.exports = defineConfig({
       },
     },
   },
+  // tailwindcss & windicss
   plugins: [
     aspectRatioPlugin,
     formsPlugin,
@@ -32,6 +36,9 @@ module.exports = defineConfig({
     scrollSnapPlugin,
     typographyPlugin(),
   ],
+  // windicss
+  preflight: false,
+  // tailwindcss
   corePlugins: {
     preflight: false,
   },
