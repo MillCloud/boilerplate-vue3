@@ -23,7 +23,7 @@
 - [axios](https://github.com/axios/axios)
 - [vue-query](https://vue-query.vercel.app/)
 - [statuses](https://github.com/jshttp/statuses)
-- [windicss](https://windicss.org/)
+- [tailwindcss](https://tailwindcss.com/)
 - [element-plus](https://element-plus.org/) - 对于移动端网页，请考虑 [vant](https://youzan.github.io/vant)
 - [element-pro-components](https://tolking.github.io/element-pro-components/)
 - [iconify](https://iconify.design/)
@@ -174,9 +174,9 @@ pnpm run dev
 ├── pnpm-lock.yaml
 ├── postcss.config.js           # postcss 配置文件
 ├── README.md
-├── vite.config.ts              # vite 配置文件
+└── tailwind.config.js          # tailwindcss 配置文件
 ├── tsconfig.json               # typescript 配置文件
-└── windi.config.ts             # windicss 配置文件
+└── vite.config.ts              # vite 配置文件
 ```
 
 ### VSCode 支持

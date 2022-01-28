@@ -1,5 +1,5 @@
 <template>
-  <el-container class="relative h-screen bg-gray-4">
+  <el-container class="relative h-screen bg-gray-100">
     <el-main>
       <router-view />
     </el-main>
@@ -8,13 +8,13 @@
         <Icon
           :class="{ 'text-danger': networkText.includes('请检查') }"
           icon="carbon:network-public"
-          class="mr-2 el-icon-"
+          class="el-icon mr-2"
         />
         <span class="mr-4" :class="{ 'text-danger': networkText.includes('请检查') }">
           {{ networkText }}
         </span>
       </template>
-      <Icon icon="carbon:version" class="mr-2 el-icon-" />
+      <Icon icon="carbon:version" class="el-icon mr-2" />
       <span class="mr-4">v{{ pkg.version }}</span>
     </el-footer>
   </el-container>
