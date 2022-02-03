@@ -50,7 +50,7 @@
     "@babel/eslint-parser": "~7.17.0",
     "@commitlint/cli": "~16.1.0",
     "@iconify/json": "~2.0.33",
-    "@modyqyw/fabric": "~4.10.5",
+    "@modyqyw/fabric": "~4.11.0",
     "@tailwindcss/aspect-ratio": "~0.4.0",
     "@tailwindcss/forms": "~0.4.0",
     "@tailwindcss/line-clamp": "~0.3.1",
