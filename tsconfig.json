@@ -1,7 +1,7 @@
 {
-  "extends": "./node_modules/@modyqyw/fabric/tsconfig.base.json",
+  "extends": "@modyqyw/fabric/tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "jsx": "preserve",
     "paths": {
       "@/*": ["./src/*"]
@@ -15,8 +15,7 @@
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client",
       "vue/macros-global"
-    ],
-    "target": "ESNext"
+    ]
   },
   "include": [
     "./**/.*.js",
