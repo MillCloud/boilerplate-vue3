@@ -1,5 +1,5 @@
 {
-  "extends": "@modyqyw/fabric/tsconfig.base.json",
+  "extends": "@vue/tsconfig/tsconfig.web.json",
   "compilerOptions": {
     "baseUrl": ".",
     "jsx": "preserve",
@@ -8,7 +8,7 @@
     },
     "types": [
       "element-plus/global",
-      "element-pro-components/types/components.d.ts",
+      "element-pro-components",
       "type-fest",
       "unplugin-icons/types/vue",
       "vite/client",

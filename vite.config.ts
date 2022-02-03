@@ -81,10 +81,6 @@ export default defineConfig({
     },
   },
   server: {
-    fs: {
-      strict: true,
-    },
-    host: true,
     // https: {
     //   // https://github.com/vitejs/vite/issues/4403
     //   // @ts-ignore
