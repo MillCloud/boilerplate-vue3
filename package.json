@@ -94,7 +94,7 @@
     "vite-plugin-mkcert": "~1.5.2",
     "vite-plugin-pages": "~0.20.1",
     "vite-plugin-stylelint": "~1.1.0",
-    "vite-plugin-vue-layouts": "~0.5.0",
+    "vite-plugin-vue-layouts": "~0.6.0",
     "vue-tsc": "~0.31.1"
   }
 }

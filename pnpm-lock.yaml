@@ -67,7 +67,7 @@ specifiers:
   vite-plugin-mkcert: ~1.5.2
   vite-plugin-pages: ~0.20.1
   vite-plugin-stylelint: ~1.1.0
-  vite-plugin-vue-layouts: ~0.5.0
+  vite-plugin-vue-layouts: ~0.6.0
   vue: ~3.2.29
   vue-query: ~1.19.0
   vue-router: ~4.0.12
@@ -145,7 +145,7 @@ devDependencies:
   vite-plugin-mkcert: 1.5.2
   vite-plugin-pages: 0.20.1_vite@2.7.13
   vite-plugin-stylelint: 1.1.0_vite@2.7.13
-  vite-plugin-vue-layouts: 0.5.0_5be28afadb16af157591decefdfd37a0
+  vite-plugin-vue-layouts: 0.6.0_5be28afadb16af157591decefdfd37a0
   vue-tsc: 0.31.1_typescript@4.5.5
 
 packages:
@@ -9011,8 +9011,8 @@ packages:
       vite: 2.7.13_sass@1.49.7
     dev: true
 
-  /vite-plugin-vue-layouts/0.5.0_5be28afadb16af157591decefdfd37a0:
-    resolution: {integrity: sha512-KN03GMSGNrWxeHJo5OO9fvdZh44PfievNAoLeMbf20UQPBBO6kpIMVTYB6sFPMWmiTbqZmq3we4z/ocJkxAEiA==}
+  /vite-plugin-vue-layouts/0.6.0_5be28afadb16af157591decefdfd37a0:
+    resolution: {integrity: sha512-7QX7o/NpCfs+hyXphwYfmPqAEQ6qd4uXsvI0VsovjGT2eCoEE5dMdP6L+uqqNWY4uqv7oCvtinecZmbzZv/9Rg==}
     peerDependencies:
       vite: ^2.5.0
       vue: ^2.6.12 || ^3.2.4
