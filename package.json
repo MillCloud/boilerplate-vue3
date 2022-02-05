@@ -4,7 +4,7 @@
   "private": true,
   "description": "A boilerplate for vue3.",
   "scripts": {
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "check:deps": "ncu",
     "check:types": "vue-tsc",
     "commit": "git-cz",
