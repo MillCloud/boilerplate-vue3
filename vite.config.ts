@@ -13,28 +13,11 @@ import eslint from 'vite-plugin-eslint';
 import stylelint from 'vite-plugin-stylelint';
 import compression from 'vite-plugin-compression';
 // import mkcert from 'vite-plugin-mkcert';
+import pkg from './package.json';
 
 export default defineConfig({
   optimizeDeps: {
-    include: [
-      '@element-plus/icons-vue',
-      '@iconify/vue',
-      '@modyqyw/utils',
-      '@vueuse/core',
-      '@vueuse/integrations',
-      '@vueuse/router',
-      'axios',
-      'dayjs',
-      'element-plus',
-      'element-pro-components',
-      'nprogress',
-      'pinia',
-      'query-string',
-      'vue',
-      'vue-query',
-      'vue-query/devtools',
-      'vue-router',
-    ],
+    include: Object.keys(pkg.dependencies),
   },
   plugins: [
     vue({
