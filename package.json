@@ -6,10 +6,10 @@
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
     "check:deps": "ncu",
-    "check:types": "vue-tsc",
+    "check:types": "vue-tsc --noEmit",
     "commit": "git-cz",
     "dev": "vite",
-    "lint": "pnpm run lint:eslint && pnpm run lint:markdownlint && pnpm run lint:stylelint && vue-tsc --noEmit",
+    "lint": "pnpm run lint:eslint && pnpm run lint:markdownlint && pnpm run lint:stylelint",
     "lint:eslint": "eslint . --fix --ext=.js,.cjs,.mjs,.jsx,.ts,.cts,.mts,.tsx,.vue,.svelte --ignore-path=.gitignore",
     "lint:markdownlint": "markdownlint . --fix --ignore-path=.gitignore",
     "lint:stylelint": "stylelint \"./**/*.{css,less,scss,sass,vue,svelte}\" --fix --allow-empty-input --ignore-path=.gitignore",
