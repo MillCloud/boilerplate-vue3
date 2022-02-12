@@ -34,7 +34,7 @@
     "color": "~4.2.0",
     "dayjs": "~1.10.7",
     "element-plus": "~2.0.1",
-    "element-pro-components": "~0.17.1",
+    "element-pro-components": "~0.18.0",
     "modern-normalize": "~1.1.0",
     "nprogress": "~0.2.0",
     "pinia": "~2.0.11",
