@@ -26,7 +26,7 @@ specifiers:
   '@vueuse/core': ~7.6.2
   '@vueuse/integrations': ~7.6.2
   '@vueuse/router': ~7.6.2
-  axios: ~0.25.0
+  axios: ~0.26.0
   browser-update: ~3.3.38
   color: ~4.2.1
   commitizen: ~4.2.4
@@ -78,9 +78,9 @@ dependencies:
   '@iconify/vue': 3.1.3_vue@3.2.31
   '@modyqyw/utils': 2.1.2
   '@vueuse/core': 7.6.2_vue@3.2.31
-  '@vueuse/integrations': 7.6.2_60c0a4607a7b236972dc46a085029698
+  '@vueuse/integrations': 7.6.2_cee5aa3826cb92439bb32adc5ffb6d94
   '@vueuse/router': 7.6.2_vue-router@4.0.12+vue@3.2.31
-  axios: 0.25.0
+  axios: 0.26.0
   browser-update: 3.3.38
   color: 4.2.1
   dayjs: 1.10.7
@@ -1873,7 +1873,7 @@ packages:
       vue-demi: 0.12.1_vue@3.2.31
     dev: false
 
-  /@vueuse/integrations/7.6.2_60c0a4607a7b236972dc46a085029698:
+  /@vueuse/integrations/7.6.2_cee5aa3826cb92439bb32adc5ffb6d94:
     resolution: {integrity: sha512-S5HAChCaHtFSlPQtf8fgNll21QZNWrsnD7+2egYd1UQkJbZDsuhZ5y5qJitvjH9FrPHFanU5MHAqylaWoTO2uw==}
     peerDependencies:
       axios: '*'
@@ -1904,7 +1904,7 @@ packages:
     dependencies:
       '@vueuse/core': 7.6.2_vue@3.2.31
       '@vueuse/shared': 7.6.2_vue@3.2.31
-      axios: 0.25.0
+      axios: 0.26.0
       nprogress: 0.2.0
       vue-demi: 0.12.1_vue@3.2.31
     transitivePeerDependencies:
@@ -2268,15 +2268,15 @@ packages:
   /axios/0.21.4_debug@4.3.3:
     resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
     dependencies:
-      follow-redirects: 1.14.7
+      follow-redirects: 1.14.8
     transitivePeerDependencies:
       - debug
     dev: true
 
-  /axios/0.25.0:
-    resolution: {integrity: sha512-cD8FOb0tRH3uuEe6+evtAbgJtfxr7ly3fQjYcMcuPlgkwVS9xboaVIpcDV+cYQe+yGykgwZCs1pzjntcGa6l5g==}
+  /axios/0.26.0:
+    resolution: {integrity: sha512-lKoGLMYtHvFrPVt3r+RBMp9nh34N0M8zEfCWqdWZx6phynIEhQqAdydpyBAAG211zlhX9Rgu08cOamy6XjE5Og==}
     dependencies:
-      follow-redirects: 1.14.7
+      follow-redirects: 1.14.8
     transitivePeerDependencies:
       - debug
     dev: false
@@ -4406,8 +4406,8 @@ packages:
     resolution: {integrity: sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==}
     dev: true
 
-  /follow-redirects/1.14.7:
-    resolution: {integrity: sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==}
+  /follow-redirects/1.14.8:
+    resolution: {integrity: sha512-1x0S9UVJHsQprFcEC/qnNzBLcIxsjAV905f/UkQxbclCsoTWlacCNOpQa/anodLl2uaEKFhfWOvM2Qg77+15zA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
