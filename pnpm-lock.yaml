@@ -46,7 +46,7 @@ specifiers:
   pinia: ~2.0.11
   postcss: ~8.4.6
   postcss-flexbugs-fixes: ~5.0.2
-  postcss-preset-env: ~7.3.2
+  postcss-preset-env: ~7.3.3
   prettier: ~2.5.1
   query-string: ~7.1.1
   release-it: ~14.12.4
@@ -126,7 +126,7 @@ devDependencies:
   picocolors: 1.0.0
   postcss: 8.4.6
   postcss-flexbugs-fixes: 5.0.2_postcss@8.4.6
-  postcss-preset-env: 7.3.2_postcss@8.4.6
+  postcss-preset-env: 7.3.3_postcss@8.4.6
   prettier: 2.5.1
   release-it: 14.12.4
   rimraf: 3.0.2
@@ -7124,8 +7124,8 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-preset-env/7.3.2_postcss@8.4.6:
-    resolution: {integrity: sha512-bxKNZu7/JWTiePds3IJlDdnCaYkIQt38KkfMX9mKmDw0+D8tpf/a+1sog34BuiDsRsKWYYGaPvfKw61gJs7f6A==}
+  /postcss-preset-env/7.3.3_postcss@8.4.6:
+    resolution: {integrity: sha512-/4EIceyxf6LKihp88YnQ0uExt//EHozxOspsCQbLq9/RB4W0zutdk52XJZzDYtCkvergw0NTTQvB7TpdxBRbvQ==}
     engines: {node: ^12 || ^14 || >=16}
     peerDependencies:
       postcss: ^8.4
