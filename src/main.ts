@@ -4,8 +4,10 @@ import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 import browserUpdate from 'browser-update';
-import ElementPlus, { ElCollapseTransition } from 'element-plus';
+import ElementPlus from 'element-plus';
 import ElementProComponents from 'element-pro-components';
+import { VueQueryPlugin } from 'vue-query';
+import { vueQueryPluginOptions } from './utils';
 import App from './App.vue';
 import router from './router';
 import '@/styles/preflight.scss';
@@ -26,5 +28,5 @@ createApp(App)
   .use(router)
   .use(ElementPlus)
   .use(ElementProComponents)
-  .component(ElCollapseTransition.name, ElCollapseTransition)
+  .use(VueQueryPlugin, vueQueryPluginOptions)
   .mount('#app');

@@ -2,6 +2,7 @@ import { isRef, isReactive, unref } from 'vue';
 import axios from 'axios';
 import { ElMessageBox, ElNotification, ElMessage } from 'element-plus';
 import { QueryClient, QueryCache, MutationCache } from 'vue-query';
+import type { VueQueryPluginOptions } from 'vue-query';
 import { isArray, isObject } from '@modyqyw/utils';
 import qs from 'query-string';
 import router from '@/router';
@@ -194,3 +195,7 @@ export const queryClient = new QueryClient({
     },
   },
 });
+
+export const vueQueryPluginOptions: VueQueryPluginOptions = {
+  queryClient,
+};
