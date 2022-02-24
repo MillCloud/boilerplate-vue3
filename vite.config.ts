@@ -3,6 +3,7 @@ import path from 'path';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
+import vueDefineOptions from 'unplugin-vue-define-options';
 import pages from 'vite-plugin-pages';
 import layouts from 'vite-plugin-vue-layouts';
 import vueComponents from 'unplugin-vue-components/vite';
@@ -20,6 +21,7 @@ export default defineConfig({
       reactivityTransform: true,
     }),
     vueJsx(),
+    vueDefineOptions(),
     pages({
       exclude: [
         '**/components/*.js',

@@ -60,6 +60,7 @@ specifiers:
   typescript: ^4.5.5
   unplugin-icons: ^0.13.2
   unplugin-vue-components: ^0.17.20
+  unplugin-vue-define-options: ^0.3.1
   vite: ^2.8.4
   vite-plugin-compression: ^0.5.1
   vite-plugin-env-compatible: ^1.1.1
@@ -138,6 +139,7 @@ devDependencies:
   typescript: 4.5.5
   unplugin-icons: 0.13.2_vite@2.8.4
   unplugin-vue-components: 0.17.20_vite@2.8.4+vue@3.2.31
+  unplugin-vue-define-options: 0.3.1_vite@2.8.4+vue@3.2.31
   vite: 2.8.4_sass@1.49.8
   vite-plugin-compression: 0.5.1_vite@2.8.4
   vite-plugin-env-compatible: 1.1.1
@@ -8971,6 +8973,21 @@ packages:
       - esbuild
       - rollup
       - supports-color
+      - vite
+      - webpack
+    dev: true
+
+  /unplugin-vue-define-options/0.3.1_vite@2.8.4+vue@3.2.31:
+    resolution: {integrity: sha512-/i4nLLm0m13yWagFljUlqPvJt4ZQD86MdkBhQnhfH2E7OpIe8+7MJlYRqytru7p/h24RFcRZ8FC+vM+4OoiPYQ==}
+    peerDependencies:
+      vue: ^3.2.25
+    dependencies:
+      '@rollup/pluginutils': 4.1.2
+      unplugin: 0.3.2_vite@2.8.4
+      vue: 3.2.31
+    transitivePeerDependencies:
+      - esbuild
+      - rollup
       - vite
       - webpack
     dev: true
