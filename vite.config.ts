@@ -16,6 +16,12 @@ import compression from 'vite-plugin-compression';
 // import mkcert from 'vite-plugin-mkcert';
 
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      sass: { charset: false },
+      scss: { charset: false },
+    },
+  },
   plugins: [
     vue({
       reactivityTransform: true,
