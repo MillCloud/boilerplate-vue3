@@ -52,7 +52,6 @@
     "@iconify/json": "^2.1.6",
     "@modyqyw/fabric": "^4.12.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
-    "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/line-clamp": "^0.3.1",
     "@tailwindcss/typography": "^0.5.2",
     "@types/browser-update": "^3.3.0",

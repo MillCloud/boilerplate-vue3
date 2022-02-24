@@ -11,7 +11,6 @@ specifiers:
   '@modyqyw/fabric': ^4.12.0
   '@modyqyw/utils': ^2.1.2
   '@tailwindcss/aspect-ratio': ^0.4.0
-  '@tailwindcss/forms': ^0.4.0
   '@tailwindcss/line-clamp': ^0.3.1
   '@tailwindcss/typography': ^0.5.2
   '@types/browser-update': ^3.3.0
@@ -104,7 +103,6 @@ devDependencies:
   '@iconify/json': 2.1.6
   '@modyqyw/fabric': 4.12.0_d204e7ad7e94d16e42db7bba90f6fce6
   '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@3.0.23
-  '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.23
   '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.0.23
   '@tailwindcss/typography': 0.5.2_tailwindcss@3.0.23
   '@types/browser-update': 3.3.0
@@ -1310,15 +1308,6 @@ packages:
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 3.0.23
-    dev: true
-
-  /@tailwindcss/forms/0.4.0_tailwindcss@3.0.23:
-    resolution: {integrity: sha512-DeaQBx6EgEeuZPQACvC+mKneJsD8am1uiJugjgQK1+/Vt+Ai0GpFBC2T2fqnUad71WgOxyrZPE6BG1VaI6YqfQ==}
-    peerDependencies:
-      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
-    dependencies:
-      mini-svg-data-uri: 1.4.3
       tailwindcss: 3.0.23
     dev: true
 
@@ -6156,11 +6145,6 @@ packages:
   /min-indent/1.0.1:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
-    dev: true
-
-  /mini-svg-data-uri/1.4.3:
-    resolution: {integrity: sha512-gSfqpMRC8IxghvMcxzzmMnWpXAChSA+vy4cia33RgerMS8Fex95akUyQZPbxJJmeBGiGmK7n/1OpUX8ksRjIdA==}
-    hasBin: true
     dev: true
 
   /minimatch/3.0.5:
