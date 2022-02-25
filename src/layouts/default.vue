@@ -3,7 +3,7 @@
     <el-main class="p-20">
       <router-view />
     </el-main>
-    <el-footer class="center">
+    <el-footer class="flex items-center justify-center">
       <template v-if="network.isSupported">
         <Icon
           :class="{ 'text-danger': networkText.includes('请检查') }"
