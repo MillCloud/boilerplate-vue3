@@ -1,6 +1,6 @@
 <template>
   <el-container class="relative h-screen bg-gray-100">
-    <el-main>
+    <el-main class="p-20">
       <router-view />
     </el-main>
     <el-footer class="center">
@@ -40,9 +40,3 @@ const networkText = computed(() => {
   return '网络正常';
 });
 </script>
-
-<style scoped lang="scss">
-.el-main {
-  padding: 80px;
-}
-</style>
