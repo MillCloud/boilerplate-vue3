@@ -7,6 +7,7 @@ import browserUpdate from 'browser-update';
 import ElementPlus from 'element-plus';
 import ElementProComponents from 'element-pro-components';
 import { VueQueryPlugin } from 'vue-query';
+import { Icon } from '@iconify/vue';
 import { vueQueryPluginOptions } from './utils';
 import App from './App.vue';
 import router from './router';
@@ -29,4 +30,5 @@ createApp(App)
   .use(ElementPlus)
   .use(ElementProComponents)
   .use(VueQueryPlugin, vueQueryPluginOptions)
+  .component('v-icon', Icon)
   .mount('#app');
