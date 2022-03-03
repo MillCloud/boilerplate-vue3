@@ -5,7 +5,7 @@
     </el-main>
     <el-footer class="flex items-center justify-center">
       <template v-if="network.isSupported">
-        <Icon
+        <v-icon
           :class="{ 'text-danger': networkText.includes('请检查') }"
           icon="carbon:network-public"
           class="el-icon mr-2"
@@ -14,7 +14,7 @@
           {{ networkText }}
         </span>
       </template>
-      <Icon icon="carbon:version" class="el-icon mr-2" />
+      <v-icon icon="carbon:version" class="el-icon mr-2" />
       <span class="mr-4">v{{ pkg.version }}</span>
     </el-footer>
   </el-container>
@@ -23,7 +23,6 @@
 <script setup lang="ts">
 import { reactive, computed } from 'vue';
 import { useNetwork } from '@vueuse/core';
-import { Icon } from '@iconify/vue';
 import pkg from '@/../package.json';
 
 const network = reactive(useNetwork());
