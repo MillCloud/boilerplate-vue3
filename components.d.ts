@@ -7,6 +7,8 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink'];
     RouterView: typeof import('vue-router')['RouterView'];
     VIcon: typeof import('@iconify/vue')['Icon'];
+    VRouterView: typeof import('./src/components/VRouterView.vue')['default'];
+    VSpacer: typeof import('./src/components/VSpacer.vue')['default'];
   }
 }
 
