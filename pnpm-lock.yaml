@@ -24,7 +24,7 @@ specifiers:
   '@vitejs/plugin-vue': ^2.2.4
   '@vitejs/plugin-vue-jsx': ^1.3.8
   '@vue/tsconfig': ^0.1.3
-  '@vueuse/core': ^7.7.0
+  '@vueuse/core': ^8.0.0
   '@vueuse/integrations': ^7.7.0
   '@vueuse/router': ^7.7.0
   axios: ^0.26.0
@@ -79,7 +79,7 @@ specifiers:
 dependencies:
   '@element-plus/icons-vue': 1.0.0_vue@3.2.31
   '@iconify/vue': 3.1.4_vue@3.2.31
-  '@vueuse/core': 7.7.0_vue@3.2.31
+  '@vueuse/core': 8.0.0_vue@3.2.31
   '@vueuse/integrations': 7.7.0_cee5aa3826cb92439bb32adc5ffb6d94
   '@vueuse/router': 7.7.0_vue-router@4.0.13+vue@3.2.31
   axios: 0.26.0
@@ -1758,6 +1758,23 @@ packages:
       vue-demi: 0.12.1_vue@3.2.31
     dev: false
 
+  /@vueuse/core/8.0.0_vue@3.2.31:
+    resolution: {integrity: sha512-CU8oQhTaAQ4+9IlEHnaGk88qQ2fSvALHixWZhfyA2j18G42XeyJz3V0FmnBMWZUwd7VRSHJZFbGziZ6o5npNow==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@vueuse/metadata': 8.0.0
+      '@vueuse/shared': 8.0.0_vue@3.2.31
+      vue: 3.2.31
+      vue-demi: 0.12.1_vue@3.2.31
+    dev: false
+
   /@vueuse/integrations/7.7.0_cee5aa3826cb92439bb32adc5ffb6d94:
     resolution: {integrity: sha512-uWx/ewh9/enOqrpPHYCXJeXKw73wJyPkwokVMgaQpkA+hbtlZJ2AX+1AP7fF3ul9zFYW+FXATK9z6vDrG0hlIg==}
     peerDependencies:
@@ -1797,6 +1814,10 @@ packages:
       - vue
     dev: false
 
+  /@vueuse/metadata/8.0.0:
+    resolution: {integrity: sha512-23R9pqgfJnfmUnGCOtaDkwaNYEAO7N6whvaAFAs5D5xHXgqAj+z/tLhwQzSJw/ZzJGUb8W5L+VgP9S7SL35riw==}
+    dev: false
+
   /@vueuse/router/7.7.0_vue-router@4.0.13+vue@3.2.31:
     resolution: {integrity: sha512-iRqj5hyK2iPArIKczL0+QpoiE/ZkbxHCK10X42Oh9MJ0IyFGjF/EVO6482zQFYnO+GnqXpyHRuvWf3Rx2W5hKA==}
     peerDependencies:
@@ -1812,6 +1833,21 @@ packages:
 
   /@vueuse/shared/7.7.0_vue@3.2.31:
     resolution: {integrity: sha512-ANzMcUnjuUPJ9nWqMAqYt8p0qon6AH5pP5/V/0RSWkwCIWZwi57ujIaxizzMwnJECUF/73BmsRmpvvtokCIrKw==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      vue: 3.2.31
+      vue-demi: 0.12.1_vue@3.2.31
+    dev: false
+
+  /@vueuse/shared/8.0.0_vue@3.2.31:
+    resolution: {integrity: sha512-HUIFZ5Vc3aGvIzDQJJhg2+Ok5xvNuwxoz5HrOr/M765wlj357WiMYzhU2XGljL6IcmK29SP/1Jb4Fra7A4PBCw==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0

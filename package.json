@@ -25,7 +25,7 @@
   "dependencies": {
     "@element-plus/icons-vue": "^1.0.0",
     "@iconify/vue": "^3.1.4",
-    "@vueuse/core": "^7.7.0",
+    "@vueuse/core": "^8.0.0",
     "@vueuse/integrations": "^7.7.0",
     "@vueuse/router": "^7.7.0",
     "axios": "^0.26.0",
