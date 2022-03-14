@@ -18,8 +18,10 @@ import compression from 'vite-plugin-compression';
 export default defineConfig({
   css: {
     preprocessorOptions: {
-      sass: { charset: false },
-      scss: { charset: false },
+      scss: {
+        charset: false,
+        additionalData: `@use "@/styles/variables.scss" as *;`,
+      },
     },
   },
   plugins: [

@@ -12,6 +12,10 @@ import Components from './components';
 import App from './App.vue';
 import router from './router';
 import '@/styles/preflight.scss';
+import '@/styles/element.scss';
+import 'element-pro-components/lib/styles/index.css';
+import 'nprogress/nprogress.css';
+import '@/styles/tailwind.scss';
 import '@/styles/global.scss';
 import '@/guard';
 
