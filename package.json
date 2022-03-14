@@ -25,9 +25,9 @@
   "dependencies": {
     "@element-plus/icons-vue": "^1.1.1",
     "@iconify/vue": "^3.1.4",
-    "@vueuse/core": "^8.0.0",
-    "@vueuse/integrations": "^8.0.0",
-    "@vueuse/router": "^8.0.0",
+    "@vueuse/core": "^8.0.1",
+    "@vueuse/integrations": "^8.0.1",
+    "@vueuse/router": "^8.0.1",
     "axios": "^0.26.1",
     "browser-update": "^3.3.38",
     "color": "^4.2.1",
