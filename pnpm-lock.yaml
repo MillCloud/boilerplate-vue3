@@ -33,7 +33,7 @@ specifiers:
   commitizen: ^4.2.4
   cross-env: ^7.0.3
   dayjs: ^1.10.8
-  element-plus: 2.0.5
+  element-plus: 2.1.2
   element-pro-components: ^0.18.2
   eslint: ^8.11.0
   husky: ^7.0.4
@@ -86,7 +86,7 @@ dependencies:
   browser-update: 3.3.38
   color: 4.2.1
   dayjs: 1.10.8
-  element-plus: 2.0.5_1a412d14def5ff5ca1122000e4bee666
+  element-plus: 2.1.2_1a412d14def5ff5ca1122000e4bee666
   element-pro-components: 0.18.2_@types+lodash-es@4.17.6
   lodash-es: 4.17.21
   modern-normalize: 1.1.0
@@ -3143,30 +3143,8 @@ packages:
     resolution: {integrity: sha512-Ks+ANzLoIrFDUOJdjxYMH6CMKB8UQo5modAwvSZTxgF+vEs/U7G5IbWFUp6dS4klPkTDVdxbORuk8xAXXhMsWw==}
     dev: true
 
-  /element-plus/2.0.5_1a412d14def5ff5ca1122000e4bee666:
-    resolution: {integrity: sha512-zeyICvdDHSs7nwOGPAfI0B3y1HfH8o6IcKI5OA5JnHxildoQHqMycB0PPdEXAewzrsuCNigo6ihrwD9OuhDLHA==}
-    peerDependencies:
-      vue: ^3.2.0
-    dependencies:
-      '@ctrl/tinycolor': 3.4.0
-      '@element-plus/icons-vue': 1.1.1_vue@3.2.31
-      '@popperjs/core': 2.11.3
-      '@vueuse/core': 7.7.1_vue@3.2.31
-      async-validator: 4.0.7
-      dayjs: 1.10.8
-      lodash: 4.17.21
-      lodash-es: 4.17.21
-      lodash-unified: 1.0.2_da03a4540fbd16bbaafbb96724306afd
-      memoize-one: 6.0.0
-      normalize-wheel-es: 1.1.1
-      vue: 3.2.31
-    transitivePeerDependencies:
-      - '@types/lodash-es'
-      - '@vue/composition-api'
-    dev: false
-
-  /element-plus/2.1.1_1a412d14def5ff5ca1122000e4bee666:
-    resolution: {integrity: sha512-XG6XBo9tLYzfW1MNTgGoBOoPGnfMAkFWJSsCaS5M7ekOCszC4HKCj4OqIkusGemLvzR8O96S06swzQwzNBe2uA==}
+  /element-plus/2.1.2_1a412d14def5ff5ca1122000e4bee666:
+    resolution: {integrity: sha512-aG6IDgfEEUTBNbgvtvzOvmM3yo09/E0EDq3l/kDjCUec74q5rnVKvLvKjAVE0CDxVjNZzXd3BghRaBly9HJ6aw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
@@ -3195,7 +3173,7 @@ packages:
       '@element-plus/icons-vue': 1.1.1_vue@3.2.31
       '@vue/shared': 3.2.31
       '@vueuse/core': 7.7.1_vue@3.2.31
-      element-plus: 2.1.1_1a412d14def5ff5ca1122000e4bee666
+      element-plus: 2.1.2_1a412d14def5ff5ca1122000e4bee666
       lodash: 4.17.21
       vue: 3.2.31
       vue-router: 4.0.14_vue@3.2.31

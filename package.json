@@ -32,7 +32,7 @@
     "browser-update": "^3.3.38",
     "color": "^4.2.1",
     "dayjs": "^1.10.8",
-    "element-plus": "2.0.5",
+    "element-plus": "2.1.2",
     "element-pro-components": "^0.18.2",
     "lodash-es": "^4.17.21",
     "modern-normalize": "^1.1.0",
