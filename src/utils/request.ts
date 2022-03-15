@@ -41,17 +41,28 @@ export const showError = (
   error: IResponseError,
   type: 'alert' | 'notification' | 'message' = 'alert',
 ) => {
-  const content = `错误代码：${
+  const contents = [];
+  const code =
     error?.code ??
     error?.response?.data?.code ??
     // @ts-ignore
     error?.response?.code ??
     error?.response?.status ??
-    '无'
-  }，错误信息：${
-    // @ts-ignore
-    error?.message ?? error?.response?.data?.message ?? error?.response?.message ?? '无'
-  }。`;
+    '';
+  if (code) {
+    contents.push(`错误代码：${code}`);
+  }
+  // @ts-ignore
+  const url = error?.url ?? error?.config?.url ?? error?.request?.url ?? '';
+  if (url) {
+    contents.push(`请求地址：${url}`);
+  }
+  const message =
+    error?.message ?? error?.response?.data?.message ?? error?.response?.data?.msg ?? '';
+  if (message) {
+    contents.push(`错误信息：${message}`);
+  }
+  const content = contents.length <= 1 ? contents[0].split('：')[1] : `${contents.join('，')}。`;
   if (type === 'alert') {
     ElMessageBox.alert(content, {
       title: '错误',
