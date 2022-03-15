@@ -137,7 +137,7 @@ export const queryClient = new QueryClient({
           if (reSignInCodes.has(data.code)) {
             removeToken();
             showError({
-              message: '请重新登录',
+              message: '请重新登录。',
             } as IResponseError);
             router.push({
               path: '/sign-in',
@@ -180,7 +180,7 @@ export const queryClient = new QueryClient({
           if (reSignInCodes.has(data.code)) {
             removeToken();
             showError({
-              message: '请重新登录',
+              message: '请重新登录。',
             } as IResponseError);
             router.push({
               path: '/sign-in',
