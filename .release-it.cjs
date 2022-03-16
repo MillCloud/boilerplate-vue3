@@ -1,4 +1,3 @@
-/* eslint-disable no-template-curly-in-string */
 module.exports = {
   git: {
     commitMessage: 'chore(release): v${version}',
@@ -17,4 +16,3 @@ module.exports = {
     'before:init': 'pnpm install && pnpm run lint',
   },
 };
-/* eslint-enable no-template-curly-in-string */
