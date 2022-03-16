@@ -9,4 +9,7 @@ export const Headers = {
   'X-Version': `${pkg.name}/${pkg.version}`,
 };
 
+// use it with https://vueuse.org/core/usestorage/
+export const PageLimitKey = 'pageLimit';
+export const DefaultPageLimit: TPageLimit = 10;
 export const PageLimits: TPageLimit[] = [10, 20, 50, 100];
