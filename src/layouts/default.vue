@@ -10,6 +10,9 @@
   </el-container>
 </template>
 
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 import { VNetwork, VVersion } from './components';
 </script>

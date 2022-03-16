@@ -1,11 +1,11 @@
-import { isRef, isReactive, unref } from 'vue';
 import axios from 'axios';
 import { ElMessageBox, ElNotification, ElMessage } from 'element-plus';
-import { QueryClient, QueryCache, MutationCache } from 'vue-query';
 import { isObject } from 'lodash-es';
 import qs from 'query-string';
-import router from '@/router';
+import { isRef, isReactive, unref } from 'vue';
+import { QueryClient, QueryCache, MutationCache } from 'vue-query';
 import { Headers } from '@/constants';
+import router from '@/router';
 import { removeToken, getToken } from './storage';
 import type { VueQueryPluginOptions } from 'vue-query';
 
