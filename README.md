@@ -49,7 +49,7 @@
 
 ```sh
 # 安装 nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 # 设置镜像，加快下载速度
 export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node
 # 安装 node@lts
@@ -152,11 +152,9 @@ pnpm run dev
 │   ├── styles                  # 全局样式和全局变量目录
 │   ├── utils                   # 工具方法目录
 │   ├── App.vue
-│   ├── components.d.ts         # 组件定义文件
 │   ├── global.d.ts
 │   ├── guard.ts                # 导航守卫
 │   ├── main.ts
-│   ├── shims-vue-query.d.ts
 │   └── shims-vue.d.ts
 ├── .commitlintrc.cjs           # commitlint 配置文件
 ├── .editorconfig
@@ -166,10 +164,11 @@ pnpm run dev
 ├── .lintstagedrc.cjs           # lint-staged 配置文件
 ├── .markdownlint.json          # markdownlint 配置文件
 ├── .npmrc                      # npm 配置文件
-├── .postcssrc.cjs              # prettier 配置文件
+├── .postcssrc.cjs              # postcss 配置文件
 ├── .prettierrc.cjs             # prettier 配置文件
 ├── .release-it.cjs             # release-it 配置文件
 ├── .stylelintrc.cjs            # stylelint 配置文件
+├── components.d.ts             # 组件定义文件
 ├── index.html
 ├── package.json
 ├── pnpm-lock.yaml
@@ -182,7 +181,7 @@ pnpm run dev
 
 ### VSCode 支持
 
-你可以参考 [插件](https://modyqyw.top/environment/#%E6%8F%92%E4%BB%B6) 和 [settings.json](https://modyqyw.top/environment/#settings-json)。
+你可以参考 [插件](https://modyqyw.top/summarize/environment/#%E6%8F%92%E4%BB%B6) 和 [settings.json](https://modyqyw.top/summarize/environment/#settings-json)。
 
 ### 路由
 
