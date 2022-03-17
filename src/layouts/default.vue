@@ -4,15 +4,12 @@
       <v-router-view />
     </el-main>
     <el-footer class="flex items-center justify-center">
-      <v-network />
-      <v-version />
+      <layout-network />
+      <layout-version />
     </el-footer>
   </el-container>
 </template>
 
-<script
-  setup
-  lang="ts"
->
-import { VNetwork, VVersion } from './components';
+<script setup lang="ts">
+import { LayoutNetwork, LayoutVersion } from './components';
 </script>

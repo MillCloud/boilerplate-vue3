@@ -4,20 +4,14 @@
     class="flex h-8 items-center justify-center"
     :class="networkClass"
   >
-    <v-icon
-      icon="carbon:network-public"
-      class="el-icon mx-2"
-    />
+    <v-icon icon="carbon:network-public" class="el-icon mx-2" />
     <span class="mr-2">
       {{ networkText }}
     </span>
   </div>
 </template>
 
-<script
-  setup
-  lang="ts"
->
+<script setup lang="ts">
 import { useNetwork } from '@vueuse/core';
 import { reactive, computed } from 'vue';
 

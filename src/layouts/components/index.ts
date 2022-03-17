@@ -1,2 +1,2 @@
-export { default as VNetwork } from './VNetwork.vue';
-export { default as VVersion } from './VVersion.vue';
+export { default as LayoutNetwork } from './Network.vue';
+export { default as LayoutVersion } from './Version.vue';
