@@ -11,7 +11,7 @@ import App from './App.vue';
 import Components from './components';
 import router from './router';
 import { vueQueryPluginOptions } from './utils';
-import '@/styles/preflight.scss';
+import 'modern-normalize';
 import '@/styles/element.scss';
 import 'element-pro-components/lib/styles/index.css';
 import 'nprogress/nprogress.css';
