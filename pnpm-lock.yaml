@@ -17,8 +17,10 @@ specifiers:
   '@types/color': ^3.0.3
   '@types/lodash-es': ^4.17.6
   '@types/nprogress': ^0.2.0
+  '@types/postcss-preset-env': ^6.7.3
   '@types/ramda': ^0.28.1
   '@types/statuses': ^2.0.0
+  '@types/tailwindcss': ^3.0.9
   '@typescript-eslint/eslint-plugin': ^5.15.0
   '@typescript-eslint/parser': ^5.15.0
   '@vitejs/plugin-vue': ^2.2.4
@@ -47,7 +49,6 @@ specifiers:
   picocolors: ^1.0.0
   pinia: ^2.0.12
   postcss: ^8.4.12
-  postcss-flexbugs-fixes: ^5.0.2
   postcss-preset-env: ^7.4.3
   prettier: ^2.6.0
   query-string: ^7.1.1
@@ -115,8 +116,10 @@ devDependencies:
   '@types/color': 3.0.3
   '@types/lodash-es': 4.17.6
   '@types/nprogress': 0.2.0
+  '@types/postcss-preset-env': 6.7.3
   '@types/ramda': 0.28.1
   '@types/statuses': 2.0.0
+  '@types/tailwindcss': 3.0.9
   '@typescript-eslint/eslint-plugin': 5.15.0_f2c49ce7d0e93ebcfdb4b7d25b131b28
   '@typescript-eslint/parser': 5.15.0_eslint@8.11.0+typescript@4.6.2
   '@vitejs/plugin-vue': 2.2.4_vite@2.8.6+vue@3.2.31
@@ -132,7 +135,6 @@ devDependencies:
   npm-check-updates: 12.5.4
   picocolors: 1.0.0
   postcss: 8.4.12
-  postcss-flexbugs-fixes: 5.0.2_postcss@8.4.12
   postcss-preset-env: 7.4.3_postcss@8.4.12
   prettier: 2.6.0
   release-it: 14.13.0
@@ -1271,8 +1273,22 @@ packages:
     resolution: {integrity: sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==}
     dev: true
 
+  /@types/autoprefixer/9.7.2:
+    resolution: {integrity: sha512-QX7U7YW3zX3ex6MECtWO9folTGsXeP4b8bSjTq3I1ODM+H+sFHwGKuof+T+qBcDClGlCGtDb3SVfiTVfmcxw4g==}
+    dependencies:
+      '@types/browserslist': 4.15.0
+      postcss: 7.0.39
+    dev: true
+
   /@types/browser-update/3.3.0:
     resolution: {integrity: sha512-VtiqmaXXQ7b0tXYbeIAyQskI53r2xHRm/UBLJEJR6m6bjwqECmGRVyibn2dtfC33ytmAnDw8kPpHa8DUbZPnIg==}
+    dev: true
+
+  /@types/browserslist/4.15.0:
+    resolution: {integrity: sha512-h9LyKErRGZqMsHh9bd+FE8yCIal4S0DxKTOeui56VgVXqa66TKiuaIUxCAI7c1O0LjaUzOTcsMyOpO9GetozRA==}
+    deprecated: This is a stub types definition. browserslist provides its own type definitions, so you do not need this installed.
+    dependencies:
+      browserslist: 4.20.2
     dev: true
 
   /@types/cacheable-request/6.0.2:
@@ -1376,6 +1392,13 @@ packages:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
 
+  /@types/postcss-preset-env/6.7.3:
+    resolution: {integrity: sha512-3YS66Cd7yNTOjjIPoOUaeGbcnxH+0eeP8Ih/RLpFEDazK16lOTabMqmHfL76DBNj5LreJlKRtKML07JkkuxRyw==}
+    dependencies:
+      '@types/autoprefixer': 9.7.2
+      postcss: 7.0.39
+    dev: true
+
   /@types/prettier/2.4.4:
     resolution: {integrity: sha512-ReVR2rLTV1kvtlWFyuot+d1pkpG2Fw/XKE3PDAdj57rbM97ttSp9JZ2UsP+2EHTylra9cUf6JA7tGwW1INzUrA==}
     dev: true
@@ -1394,6 +1417,10 @@ packages:
 
   /@types/statuses/2.0.0:
     resolution: {integrity: sha512-V4dX/J9hyQ8hq2hztP+8xB1girGot5ltjtmxaJusf6AGyxi2RvWJrpWj4/DxF0/GFNOkswUVnbkGXKaaY9juQQ==}
+    dev: true
+
+  /@types/tailwindcss/3.0.9:
+    resolution: {integrity: sha512-uZjNKNjlA6cr6py/GWsDjevJb/Bl0fmaMNUdIpNMW3TJGJzxN9O6uFWx97LiSK7ithWNrrDSytq1FdvHpgSvWg==}
     dev: true
 
   /@types/throttle-debounce/2.1.0:
@@ -6429,6 +6456,10 @@ packages:
     resolution: {integrity: sha512-mmK20YtPb4yXHlaPuOD/uPIpRu7iIK45GA/GiRSlNpIdfWDG5aEQmFT1HHtBmJB+t/6DvFOtOsEipsPA8Bx2cw==}
     dev: true
 
+  /picocolors/0.2.1:
+    resolution: {integrity: sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==}
+    dev: true
+
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
@@ -6568,14 +6599,6 @@ packages:
     dependencies:
       postcss: 8.4.12
       postcss-value-parser: 4.2.0
-    dev: true
-
-  /postcss-flexbugs-fixes/5.0.2_postcss@8.4.12:
-    resolution: {integrity: sha512-18f9voByak7bTktR2QgDveglpn9DTbBWPUzSOe9g0N4WR/2eSt6Vrcbf0hmspvMI6YWGywz6B9f7jzpFNJJgnQ==}
-    peerDependencies:
-      postcss: ^8.1.4
-    dependencies:
-      postcss: 8.4.12
     dev: true
 
   /postcss-focus-visible/6.0.4_postcss@8.4.12:
@@ -6891,6 +6914,14 @@ packages:
 
   /postcss-value-parser/4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
+    dev: true
+
+  /postcss/7.0.39:
+    resolution: {integrity: sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      picocolors: 0.2.1
+      source-map: 0.6.1
     dev: true
 
   /postcss/8.4.12:
