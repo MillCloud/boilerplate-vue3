@@ -14,6 +14,7 @@ import pages from 'vite-plugin-pages';
 import stylelint from 'vite-plugin-stylelint';
 import layouts from 'vite-plugin-vue-layouts';
 // import mkcert from 'vite-plugin-mkcert';
+import inspect from 'vite-plugin-inspect';
 
 export default defineConfig({
   css: {
@@ -61,6 +62,7 @@ export default defineConfig({
     //   autoUpgrade: true,
     //   source: 'coding',
     // }),
+    inspect(),
   ],
   resolve: {
     alias: {
@@ -68,11 +70,11 @@ export default defineConfig({
       '@/': `${path.resolve('src')}/`,
     },
   },
-  server: {
-    // https: {
-    //   // https://github.com/vitejs/vite/issues/4403
-    //   // @ts-ignore
-    //   maxSessionMemory: 128,
-    // },
-  },
+  // server: {
+  //   https: {
+  //     // https://github.com/vitejs/vite/issues/4403
+  //     // @ts-ignore
+  //     maxSessionMemory: 128,
+  //   },
+  // },
 });
