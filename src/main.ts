@@ -15,7 +15,7 @@ import 'modern-normalize';
 import '@/styles/element.scss';
 import 'element-pro-components/lib/styles/index.css';
 import 'nprogress/nprogress.css';
-import '@/styles/tailwind.scss';
+import '@/styles/tailwind.css';
 import '@/styles/global.scss';
 import '@/guard';
 
