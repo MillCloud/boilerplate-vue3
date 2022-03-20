@@ -60,7 +60,6 @@
     "@types/color": "^3.0.3",
     "@types/lodash-es": "^4.17.6",
     "@types/nprogress": "^0.2.0",
-    "@types/postcss-preset-env": "^6.7.3",
     "@types/ramda": "^0.28.1",
     "@types/statuses": "^2.0.0",
     "@types/tailwindcss": "^3.0.9",
