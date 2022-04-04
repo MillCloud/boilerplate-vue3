@@ -36,7 +36,7 @@ specifiers:
   cross-env: ^7.0.3
   dayjs: ^1.11.0
   element-plus: ^2.1.7
-  element-pro-components: ^0.18.3
+  element-pro-components: ^1.0.0
   eslint: ^8.12.0
   husky: ^7.0.4
   is-ci: ^3.0.1
@@ -90,7 +90,7 @@ dependencies:
   color: 4.2.1
   dayjs: 1.11.0
   element-plus: 2.1.7_1a412d14def5ff5ca1122000e4bee666
-  element-pro-components: 0.18.3_@types+lodash-es@4.17.6
+  element-pro-components: 1.0.0_@types+lodash-es@4.17.6
   lodash-es: 4.17.21
   modern-normalize: 1.1.0
   nprogress: 0.2.0
@@ -1768,6 +1768,23 @@ packages:
       vue-demi: 0.12.1_vue@3.2.31
     dev: false
 
+  /@vueuse/core/8.2.4_vue@3.2.31:
+    resolution: {integrity: sha512-K8DbVLErlHMnEOqy67BrRbDmWCd4Z9X0a1dL6fQdhABLXBydy69Tm7uF5ZUotAqib9sskItYFsAnLhvGSue6bg==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@vueuse/metadata': 8.2.4
+      '@vueuse/shared': 8.2.4_vue@3.2.31
+      vue: 3.2.31
+      vue-demi: 0.12.1_vue@3.2.31
+    dev: false
+
   /@vueuse/integrations/8.2.3_44beb42ef7be14ac5b54b7d57bd28e2f:
     resolution: {integrity: sha512-8sqr9WckDGxaTyvbbgMBSThtreh3xbj9SXUspPR+0aXV1BZuOd6hEdYuvQQxGUtvRI15gNZsHgI43FFSH09tJA==}
     peerDependencies:
@@ -1813,6 +1830,10 @@ packages:
     resolution: {integrity: sha512-xH5256Bn6hBYvQWoaCBagpeCrzJmeEeWnyDDkwVFhx7+pLOe4I6gsMHie3yJoowK9AN/D7JLTtEBbWvvBi5TOA==}
     dev: false
 
+  /@vueuse/metadata/8.2.4:
+    resolution: {integrity: sha512-mn4FLULZAHd6r6vo5hLz+99xzwlVDP9qeVtZGV2Ik40m0zETe2okUr3O1Yoz6FReUoc7KAPrf0/GFpWEXVDAnQ==}
+    dev: false
+
   /@vueuse/router/8.2.3_vue-router@4.0.14+vue@3.2.31:
     resolution: {integrity: sha512-nP9uFhFqINj2Kffq0tkl8f+aKYzZQgoPC2ODK5u+mhYa+YCDmvYNPwztTIXT9w01WOnBDlTLXj8Pk6GHMTmxuw==}
     peerDependencies:
@@ -1828,6 +1849,21 @@ packages:
 
   /@vueuse/shared/8.2.3_vue@3.2.31:
     resolution: {integrity: sha512-4Cd3s+x8ZwzzAf7o8jS7mEj9pQ1Zsf9aiNBAFg4rHcWeDY0S3XMgvN4ae2hBul7jmi+Ab4REAqiqYWyYqU86qg==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.0
+      vue: ^2.6.0 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      vue: 3.2.31
+      vue-demi: 0.12.1_vue@3.2.31
+    dev: false
+
+  /@vueuse/shared/8.2.4_vue@3.2.31:
+    resolution: {integrity: sha512-sLkuZMEumsmEDYie3m6/nrk7SrLGlyUgtVn/0EJZ8Chaj1YfSmBQuLxNE0ruQ/6VZlqkx44jEZxcgbU7qPyAiw==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -3214,14 +3250,38 @@ packages:
       - '@vue/composition-api'
     dev: false
 
-  /element-pro-components/0.18.3_@types+lodash-es@4.17.6:
-    resolution: {integrity: sha512-cAsuq4n4BrGaTz9RzJd4MhJsyCD++NRFrHeycMhD+F7DWjTL6Q0ahrER0c0CbNItgdfx7naFx5vL0oBJahCmJA==}
+  /element-plus/2.1.8_1a412d14def5ff5ca1122000e4bee666:
+    resolution: {integrity: sha512-hwFtzw0R5lKMhWf3oVvSU/ucfN8RiY8DRaRWo6LktX4RlWWA2QjKfDXtISBi5Rb303Ny4I0Sgz0CA1Fd4Z2GGg==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@ctrl/tinycolor': 3.4.0
+      '@element-plus/icons-vue': 1.1.4_vue@3.2.31
+      '@floating-ui/dom': 0.4.2
+      '@popperjs/core': 2.11.4
+      '@vueuse/core': 8.2.4_vue@3.2.31
+      async-validator: 4.0.7
+      dayjs: 1.11.0
+      escape-html: 1.0.3
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      lodash-unified: 1.0.2_da03a4540fbd16bbaafbb96724306afd
+      memoize-one: 6.0.0
+      normalize-wheel-es: 1.1.2
+      vue: 3.2.31
+    transitivePeerDependencies:
+      - '@types/lodash-es'
+      - '@vue/composition-api'
+    dev: false
+
+  /element-pro-components/1.0.0_@types+lodash-es@4.17.6:
+    resolution: {integrity: sha512-J78jiGOTNETXbq1/3vk7p34XLzkBWfMZd4FHv6Pugx2/BTdayFC8MgyK3O1q65MYp8iYA+W1R/mvDMIPg/Ut+Q==}
     engines: {node: '>=12.2.0'}
     dependencies:
       '@element-plus/icons-vue': 1.1.4_vue@3.2.31
       '@vue/shared': 3.2.31
-      '@vueuse/core': 8.2.3_vue@3.2.31
-      element-plus: 2.1.7_1a412d14def5ff5ca1122000e4bee666
+      '@vueuse/core': 8.2.4_vue@3.2.31
+      element-plus: 2.1.8_1a412d14def5ff5ca1122000e4bee666
       lodash: 4.17.21
       vue: 3.2.31
       vue-router: 4.0.14_vue@3.2.31
@@ -6212,6 +6272,10 @@ packages:
 
   /normalize-wheel-es/1.1.1:
     resolution: {integrity: sha512-157VNH4CngrcsvF8xOVOe22cwniIR3nxSltdctvQeHZj8JttEeOXffK28jucWfWBXs0QNetAumjc1GiInnwX4w==}
+    dev: false
+
+  /normalize-wheel-es/1.1.2:
+    resolution: {integrity: sha512-scX83plWJXYH1J4+BhAuIHadROzxX0UBF3+HuZNY2Ks8BciE7tSTQ+5JhTsvzjaO0/EJdm4JBGrfObKxFf3Png==}
     dev: false
 
   /npm-bundled/1.1.2:
