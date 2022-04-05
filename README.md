@@ -159,7 +159,6 @@ pnpm run dev
 ├── .commitlintrc.cjs           # commitlint 配置文件
 ├── .editorconfig
 ├── .eslintrc.cjs               # eslint 配置文件
-├── .gitattributes              # git 配置文件
 ├── .gitignore                  # git 配置文件
 ├── .lintstagedrc.cjs           # lint-staged 配置文件
 ├── .markdownlint.json          # markdownlint 配置文件
