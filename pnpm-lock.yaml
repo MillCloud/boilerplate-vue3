@@ -36,7 +36,6 @@ specifiers:
   cross-env: ^7.0.3
   dayjs: ^1.11.0
   element-plus: ^2.1.8
-  element-pro-components: ^1.0.0
   eslint: ^8.12.0
   husky: ^7.0.4
   is-ci: ^3.0.1
@@ -90,7 +89,6 @@ dependencies:
   color: 4.2.1
   dayjs: 1.11.0
   element-plus: 2.1.8_1a412d14def5ff5ca1122000e4bee666
-  element-pro-components: 1.0.0_@types+lodash-es@4.17.6
   lodash-es: 4.17.21
   modern-normalize: 1.1.0
   nprogress: 0.2.0
@@ -3249,22 +3247,6 @@ packages:
       memoize-one: 6.0.0
       normalize-wheel-es: 1.1.2
       vue: 3.2.31
-    transitivePeerDependencies:
-      - '@types/lodash-es'
-      - '@vue/composition-api'
-    dev: false
-
-  /element-pro-components/1.0.0_@types+lodash-es@4.17.6:
-    resolution: {integrity: sha512-J78jiGOTNETXbq1/3vk7p34XLzkBWfMZd4FHv6Pugx2/BTdayFC8MgyK3O1q65MYp8iYA+W1R/mvDMIPg/Ut+Q==}
-    engines: {node: '>=12.2.0'}
-    dependencies:
-      '@element-plus/icons-vue': 1.1.4_vue@3.2.31
-      '@vue/shared': 3.2.31
-      '@vueuse/core': 8.2.4_vue@3.2.31
-      element-plus: 2.1.8_1a412d14def5ff5ca1122000e4bee666
-      lodash: 4.17.21
-      vue: 3.2.31
-      vue-router: 4.0.14_vue@3.2.31
     transitivePeerDependencies:
       - '@types/lodash-es'
       - '@vue/composition-api'
