@@ -10,7 +10,7 @@ import { VueQueryPlugin } from 'vue-query';
 import App from './App.vue';
 import Components from './components';
 import router from './router';
-import { vueQueryPluginOptions } from './utils';
+import { vueQueryPluginOptions } from './helpers';
 import 'modern-normalize';
 import '@/styles/element.scss';
 import 'element-pro-components/lib/styles/index.css';

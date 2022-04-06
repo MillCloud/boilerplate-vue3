@@ -145,12 +145,12 @@ pnpm run dev
 │   ├── components              # 全局组件目录
 │   ├── composables             # 全局组合式 API 目录
 │   ├── constants               # 固定数据目录
+│   ├── helpers                 # 辅助方法目录
 │   ├── layouts                 # 布局目录
 │   ├── pages                   # 页面视图目录
 │   ├── router                  # 路由目录
 │   ├── stores                  # 状态仓库目录
 │   ├── styles                  # 全局样式和全局变量目录
-│   ├── utils                   # 工具方法目录
 │   ├── App.vue
 │   ├── global.d.ts
 │   ├── guard.ts                # 导航守卫
@@ -194,7 +194,7 @@ pnpm run dev
 
 使用 [axios](https://axios-http.com/zh/) 作为底层请求，使用 [vue-query](https://vue-query.vercel.app/) 管理底层请求。
 
-查看 [@/utils/request.ts](./src/utils/request.ts) 了解预设配置。
+查看 [@/helpers/request.ts](./src/helpers/request.ts) 了解预设配置。
 
 如果不喜欢 vue-query，也可以自行配置 [swrv](https://github.com/Kong/swrv)、[useFetch](https://vueuse.org/core/useFetch/) 或 [useAxios](https://vueuse.org/integrations/useAxios/) 使用。
 

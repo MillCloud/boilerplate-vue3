@@ -10,6 +10,8 @@ export const Headers = {
 };
 
 // use it with https://vueuse.org/core/usestorage/
+export const TokenKey = 'token';
+export const DefaultToken = '';
 export const PageLimitKey = 'pageLimit';
-export const DefaultPageLimit: TPageLimit = 10;
-export const PageLimits: TPageLimit[] = [10, 20, 50, 100];
+export const DefaultPageLimit = 10;
+export const PageLimits = [10, 20, 50, 100];

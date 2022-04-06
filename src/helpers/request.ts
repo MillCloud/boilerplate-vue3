@@ -6,7 +6,7 @@ import { isRef, isReactive, unref } from 'vue';
 import { QueryClient, QueryCache, MutationCache } from 'vue-query';
 import { Headers } from '@/constants';
 import router from '@/router';
-import { removeToken, getToken } from './storage';
+import { getToken, setToken } from './storage';
 import type { VueQueryPluginOptions } from 'vue-query';
 
 const reSignInCodes = new Set(['LOGIN_REQUIRED', 'LOGIN_TOKEN_INVALID', 'LOGIN_SESSION_EXPIRED']);
@@ -135,7 +135,7 @@ export const queryClient = new QueryClient({
         });
         if (!(data?.success ?? true)) {
           if (reSignInCodes.has(data.code)) {
-            removeToken();
+            setToken();
             showError({
               message: '请重新登录。',
             } as IResponseError);
@@ -178,7 +178,7 @@ export const queryClient = new QueryClient({
         });
         if (!(data?.success ?? true)) {
           if (reSignInCodes.has(data.code)) {
-            removeToken();
+            setToken();
             showError({
               message: '请重新登录。',
             } as IResponseError);
