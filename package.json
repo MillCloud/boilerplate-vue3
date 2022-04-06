@@ -34,7 +34,6 @@
     "color": "^4.2.1",
     "dayjs": "^1.11.0",
     "element-plus": "^2.1.8",
-    "element-pro-components": "^1.0.0",
     "lodash-es": "^4.17.21",
     "modern-normalize": "^1.1.0",
     "nprogress": "^0.2.0",

@@ -3,7 +3,6 @@ import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 import ElementPlus from 'element-plus';
-import ElementProComponents from 'element-pro-components';
 import { createPinia } from 'pinia';
 import { createApp } from 'vue';
 import { VueQueryPlugin } from 'vue-query';
@@ -13,7 +12,6 @@ import router from './router';
 import { vueQueryPluginOptions } from './helpers';
 import 'modern-normalize';
 import '@/styles/element.scss';
-import 'element-pro-components/lib/styles/index.css';
 import 'nprogress/nprogress.css';
 import '@/styles/tailwind.css';
 import '@/styles/global.scss';
@@ -32,7 +30,6 @@ createApp(App)
   .use(createPinia())
   .use(router)
   .use(ElementPlus)
-  .use(ElementProComponents)
   .use(VueQueryPlugin, vueQueryPluginOptions)
   .use(Components)
   .mount('#app');
