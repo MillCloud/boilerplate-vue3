@@ -1,8 +1,6 @@
 import axios from 'axios';
 import { ElMessageBox, ElNotification, ElMessage } from 'element-plus';
-import { isObject } from 'lodash-es';
 import qs from 'query-string';
-import { isRef, isReactive, unref } from 'vue';
 import { QueryClient, QueryCache, MutationCache } from 'vue-query';
 import { Headers } from '@/constants';
 import router from '@/router';
@@ -12,7 +10,7 @@ import type { VueQueryPluginOptions } from 'vue-query';
 const reSignInCodes = new Set(['LOGIN_REQUIRED', 'LOGIN_TOKEN_INVALID', 'LOGIN_SESSION_EXPIRED']);
 
 const instance = axios.create({
-  baseURL: process.env.VITE_REQUEST_BASE_URL || '',
+  baseURL: process.env.VITE_REQUEST_BASE_URL || 'https://jsonplaceholder.typicode.com/todos/',
   timeout: 30_000,
   headers: {
     ...Headers,
@@ -30,8 +28,9 @@ instance.interceptors.request.use((config) => ({
   ...config,
   headers: {
     ...config.headers,
-    token: getToken() || '',
-    'X-Token': getToken() || '',
+    token: getToken(),
+    'X-Token': getToken(),
+    'X-Access-Token': getToken(),
   },
 }));
 
@@ -101,32 +100,9 @@ export const queryClient = new QueryClient({
         // console.log('');
         // console.log('queryKey', queryKey);
         // console.log('');
-        let url = `${queryKey[0]}`;
-        if (Array.isArray(queryKey[1])) {
-          queryKey[1].forEach((item, index) => {
-            url = url.replace(`:${index}`, `${unref(item)}`);
-          });
-        } else if (queryKey[1]) {
-          url += `${unref(queryKey[1])}`;
-        }
-        let params: Record<string, any> = {};
-        if (isReactive(queryKey[2]) || isRef(queryKey[2]) || isObject(queryKey[2])) {
-          params = Object.fromEntries(
-            Object.entries({
-              ...params,
-              ...unref(queryKey[2] as Record<string, any>),
-            }).map(([k, v]) => [unref(k), unref(v)]),
-          );
-        }
-        let config: Record<string, any> = {};
-        if (isReactive(queryKey[3]) || isRef(queryKey[3]) || isObject(queryKey[3])) {
-          config = Object.fromEntries(
-            Object.entries({
-              ...config,
-              ...unref(queryKey[3] as Record<string, any>),
-            }).map(([k, v]) => [unref(k), unref(v)]),
-          );
-        }
+        const url = (queryKey[0] as any)?.toString();
+        const params = queryKey[1] as Record<string, any>;
+        const config = queryKey[2] as IRequestConfig;
         const { data } = await instance.request<IResponseData>({
           method: 'GET',
           url,
@@ -145,11 +121,8 @@ export const queryClient = new QueryClient({
                 redirect: encodeURIComponent(router.currentRoute.value.fullPath),
               },
             });
-          } else if ((queryKey[1] as Record<string, any>)?.showError ?? true) {
-            showError(
-              data as unknown as IResponseError,
-              (queryKey[1] as Record<string, any>)?.showErrorType,
-            );
+          } else if (config?.showError ?? true) {
+            showError(data as unknown as IResponseError, config?.showErrorType);
           }
         }
         return data;
@@ -167,14 +140,10 @@ export const queryClient = new QueryClient({
         // console.log('');
         // console.log('variables', variables);
         // console.log('');
+        const config = { ...(variables as IRequestConfig) };
         const { data } = await instance.request<IResponseData>({
           method: 'POST',
-          ...Object.fromEntries(
-            Object.entries(unref(variables) as Record<string, any>).map(([k, v]) => [
-              unref(k),
-              unref(v),
-            ]),
-          ),
+          ...config,
         });
         if (!(data?.success ?? true)) {
           if (reSignInCodes.has(data.code)) {
@@ -188,11 +157,8 @@ export const queryClient = new QueryClient({
                 redirect: encodeURIComponent(router.currentRoute.value.fullPath),
               },
             });
-          } else if ((variables as Record<string, any>)?.showError ?? true) {
-            showError(
-              data as unknown as IResponseError,
-              (variables as Record<string, any>)?.showErrorType,
-            );
+          } else if (config?.showError ?? true) {
+            showError(data as unknown as IResponseError, config?.showErrorType);
           }
         }
         return data;

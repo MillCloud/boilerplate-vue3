@@ -14,7 +14,7 @@ declare global {
     response?: IResponse;
   }
 
-  interface IMutationVariables extends AxiosRequestConfig {
+  interface IRequestConfig extends AxiosRequestConfig {
     showError?: boolean;
     showErrorType?: 'alert' | 'message' | 'notification';
   }
