@@ -1,7 +1,7 @@
 import nprogress from 'nprogress';
 import router from './router';
 
-router.beforeEach(async (to, from, next) => {
+router.beforeEach((to, from, next) => {
   nprogress.start();
   next();
 });

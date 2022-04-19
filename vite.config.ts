@@ -1,4 +1,4 @@
-import path from 'path';
+import path from 'node:path';
 // import { fileURLToPath } from 'url';
 import eslint from '@modyqyw/vite-plugin-eslint';
 import vue from '@vitejs/plugin-vue';
