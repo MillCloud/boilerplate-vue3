@@ -1,5 +1,7 @@
 # boilerplate-vue3
 
+**已经迁移到 [MillCloud/presets](https://github.com/MillCloud/presets)。**
+
 ## 简介
 
 `boilerplate-vue3` 是一个面向中国用户的简单 `vue` 模板，目标是帮助你快速开发桌面端网页/移动端网页。当然，也希望能引导你更进一步地了解 `vue` 生态。
